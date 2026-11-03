@@ -1,0 +1,131 @@
+<div class="bg-gray-50 p-6 flex flex-col gap-8 w-full">
+    <h2 class="font-bold text-xl text-slate-800">Refine Results</h2>
+
+    <div class="flex flex-col gap-2">
+        <span class="text-sm font-semibold text-slate-800">Sorting</span>
+        <select
+            class="w-full p-2 border border-gray-300 bg-white text-sm text-slate-600 focus:outline-none focus:border-orange-500 transition-colors"
+        >
+            @for (option of sortOptions; track option.id) {
+                <option [value]="option.id">{{ option.name }}</option>
+            }
+        </select>
+    </div>
+
+    <div class="flex flex-col gap-2">
+        <span class="text-sm font-semibold text-slate-800">Price Range</span>
+        <div class="flex items-center gap-2">
+            <div class="relative flex-1">
+                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm"
+                    >USD</span
+                >
+                <input
+                    type="number"
+                    min="0"
+                    placeholder="Min"
+                    class="w-full pl-12 pr-2 py-2 border border-gray-300 bg-white text-sm focus:outline-none focus:border-orange-500 transition-colors"
+                />
+            </div>
+
+            <span class="text-slate-400">-</span>
+
+            <div class="relative flex-1">
+                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm"
+                    >USD</span
+                >
+                <input
+                    type="number"
+                    min="0"
+                    placeholder="Max"
+                    class="w-full pl-12 pr-2 py-2 border border-gray-300 bg-white text-sm focus:outline-none focus:border-orange-500 transition-colors"
+                />
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col">
+        <span class="text-sm font-semibold text-slate-800 border-b border-gray-200 pb-3 mb-4"
+            >Publisher</span
+        >
+        <div class="flex flex-col gap-3">
+            @for (publisher of publishers; track publisher.id) {
+                <label class="flex items-center gap-3 cursor-pointer group">
+                    <input
+                        type="checkbox"
+                        [value]="publisher.id"
+                        class="w-4 h-4 accent-orange-500 cursor-pointer"
+                    />
+                    <span
+                        class="text-sm text-slate-600 group-hover:text-orange-500 transition-colors"
+                        >{{ publisher.name }}</span
+                    >
+                </label>
+            }
+        </div>
+    </div>
+
+    <div class="flex flex-col">
+        <span class="text-sm font-semibold text-slate-800 border-b border-gray-200 pb-3 mb-4"
+            >Release Date</span
+        >
+        <div class="flex flex-col gap-3">
+            @for (date of releaseDates; track date.id) {
+                <label class="flex items-center gap-3 cursor-pointer group">
+                    <!-- name="release_date" групує радіокнопки, щоб можна було обрати лише одну -->
+                    <input
+                        type="radio"
+                        name="release_date"
+                        [value]="date.id"
+                        class="w-4 h-4 accent-orange-500 cursor-pointer"
+                    />
+                    <span
+                        class="text-sm text-slate-600 group-hover:text-orange-500 transition-colors"
+                        >{{ date.name }}</span
+                    >
+                </label>
+            }
+        </div>
+    </div>
+
+    <div class="flex flex-col">
+        <span class="text-sm font-semibold text-slate-800 border-b border-gray-200 pb-3 mb-4"
+            >Genre</span
+        >
+        <div class="flex flex-col gap-3">
+            @for (genre of genres; track genre.id) {
+                <label class="flex items-center gap-3 cursor-pointer group">
+                    <input
+                        type="checkbox"
+                        [value]="genre.id"
+                        class="w-4 h-4 accent-orange-500 cursor-pointer"
+                    />
+                    <span
+                        class="text-sm text-slate-600 group-hover:text-orange-500 transition-colors"
+                        >{{ genre.name }}</span
+                    >
+                </label>
+            }
+        </div>
+    </div>
+
+    <div class="flex flex-col">
+        <span class="text-sm font-semibold text-slate-800 border-b border-gray-200 pb-3 mb-4"
+            >Platform</span
+        >
+        <div class="flex flex-col gap-3">
+            @for (platform of platforms; track platform.id) {
+                <label class="flex items-center gap-3 cursor-pointer group">
+                    <input
+                        type="checkbox"
+                        [value]="platform.id"
+                        class="w-4 h-4 accent-orange-500 cursor-pointer"
+                    />
+                    <span
+                        class="text-sm text-slate-600 group-hover:text-orange-500 transition-colors"
+                        >{{ platform.name }}</span
+                    >
+                </label>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "GameStore.Auth.Functions": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 5037 --useHttps",
+      "launchBrowser": false
+    }
+  }
+}

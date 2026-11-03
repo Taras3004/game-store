@@ -1,0 +1,25 @@
+﻿@GameStore.Web_HostAddress = https://localhost:7153
+
+###
+
+POST {{GameStore.Web_HostAddress}}/api/games
+Content-Type: application/json
+
+{
+  "game": {
+    "name": "",
+    "key": "some-key"
+  },
+  "genres": null,
+  "platforms": null
+}
+
+###
+
+GET {{GameStore.Web_HostAddress}}/api/platforms
+
+###
+
+GET {{GameStore.Web_HostAddress}}/api/platforms
+
+###

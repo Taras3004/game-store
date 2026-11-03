@@ -1,0 +1,55 @@
+<div class="flex gap-6 py-6 w-full">
+    <div class="w-32 h-32 bg-indigo-900 shrink-0"></div>
+
+    <div class="flex flex-col grow">
+        <div class="flex justify-between items-start">
+            <h3 class="text-lg font-bold text-slate-800">{{ item.Name }}</h3>
+            <button
+                (click)="onRemove()"
+                class="text-orange-500 hover:underline text-sm font-semibold transition-colors"
+            >
+                Remove
+            </button>
+        </div>
+
+        <span class="text-slate-500 text-sm mt-1">{{ item.ShortDescription }}</span>
+        <span class="text-slate-500 text-sm">{{ item.Size }}</span>
+
+        @if (item.DiscountedPrice) {
+            <div>
+                <span class="text-lg font-bold text-red-700 pr-2">{{
+                    item.DiscountedPrice | currency: "USD"
+                }}</span>
+                <span class="text-base font-bold text-slate-500 line-through">{{
+                    item.PriceUsd | currency: "USD"
+                }}</span>
+            </div>
+        } @else {
+            <span class="text-lg font-bold text-slate-800">{{
+                item.PriceUsd | currency: "USD"
+            }}</span>
+        }
+
+        <div class="flex items-center mt-3">
+            <button
+                (click)="onDecrease()"
+                class="border border-gray-300 w-8 h-8 flex items-center justify-center text-slate-600 hover:bg-gray-100 transition-colors"
+            >
+                -
+            </button>
+
+            <span
+                class="border-y border-gray-300 h-8 px-4 flex items-center justify-center text-slate-800 text-sm"
+            >
+                {{ item.Quantity }}
+            </span>
+
+            <button
+                (click)="onIncrease()"
+                class="bg-orange-500 border border-orange-500 w-8 h-8 flex items-center justify-center text-white hover:bg-orange-600 transition-colors"
+            >
+                +
+            </button>
+        </div>
+    </div>
+</div>

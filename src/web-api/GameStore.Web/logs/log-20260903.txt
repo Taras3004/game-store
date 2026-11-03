@@ -1,0 +1,811 @@
+2026-09-03 18:43:18.776 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/
+	User IP address: ::1
+	Request body: 
+2026-09-03 18:43:19.767 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-03 18:43:22.088 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No suitable constructor was found for entity type 'OutboxMessage'. The following constructors had parameters that could not be bound to properties of the entity type: 
+    Cannot bind 'currentTime' in 'OutboxMessage(DateTime currentTime, string messageType, string payload)'
+Note that only mapped properties can be bound to constructor parameters. Navigations to related entities, including references to owned types, cannot be bound.
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.ConstructorBindingFactory.GetBindings[T](T type, Func`5 bindToProperty, Func`5 bind, InstantiationBinding& constructorBinding, InstantiationBinding& serviceOnlyBinding)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.ConstructorBindingFactory.GetBindings(IMutableEntityType entityType, InstantiationBinding& constructorBinding, InstantiationBinding& serviceOnlyBinding)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.ConstructorBindingConvention.ProcessModelFinalizing(IConventionModelBuilder modelBuilder, IConventionContext`1 context)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.Model.FinalizeModel()
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at GameStore.DAL.Sql.Repositories.Base.SqlRepository`1.CountAsync(Specification`1 specification, CancellationToken token)
+   at GameStore.Core.Services.Sources.GameSource.GetCountWithoutLegacy(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Sources\GameSource.cs:line 194
+   at GameStore.Core.Services.Aggregators.GameProductAggregator.GetCount(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Aggregators\GameProductAggregator.cs:line 36
+   at GameStore.Core.Services.GameService.GetGameCount(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 205
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-09-03 18:43:22.267 +03:00 [ERR] Global exception handler caught an error:
+	Exception type: System.InvalidOperationException
+	Source: Microsoft.EntityFrameworkCore
+	Exception message: No suitable constructor was found for entity type 'OutboxMessage'. The following constructors had parameters that could not be bound to properties of the entity type: 
+    Cannot bind 'currentTime' in 'OutboxMessage(DateTime currentTime, string messageType, string payload)'
+Note that only mapped properties can be bound to constructor parameters. Navigations to related entities, including references to owned types, cannot be bound.
+	Inner exception: null
+	Stack Trace: System.InvalidOperationException: No suitable constructor was found for entity type 'OutboxMessage'. The following constructors had parameters that could not be bound to properties of the entity type: 
+    Cannot bind 'currentTime' in 'OutboxMessage(DateTime currentTime, string messageType, string payload)'
+Note that only mapped properties can be bound to constructor parameters. Navigations to related entities, including references to owned types, cannot be bound.
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.ConstructorBindingFactory.GetBindings[T](T type, Func`5 bindToProperty, Func`5 bind, InstantiationBinding& constructorBinding, InstantiationBinding& serviceOnlyBinding)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.ConstructorBindingFactory.GetBindings(IMutableEntityType entityType, InstantiationBinding& constructorBinding, InstantiationBinding& serviceOnlyBinding)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.ConstructorBindingConvention.ProcessModelFinalizing(IConventionModelBuilder modelBuilder, IConventionContext`1 context)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.Model.FinalizeModel()
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at GameStore.DAL.Sql.Repositories.Base.SqlRepository`1.CountAsync(Specification`1 specification, CancellationToken token)
+   at GameStore.Core.Services.Sources.GameSource.GetCountWithoutLegacy(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Sources\GameSource.cs:line 194
+   at GameStore.Core.Services.Aggregators.GameProductAggregator.GetCount(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Aggregators\GameProductAggregator.cs:line 36
+   at GameStore.Core.Services.GameService.GetGameCount(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 205
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+	Exception details:    at Microsoft.EntityFrameworkCore.Metadata.Internal.ConstructorBindingFactory.GetBindings[T](T type, Func`5 bindToProperty, Func`5 bind, InstantiationBinding& constructorBinding, InstantiationBinding& serviceOnlyBinding)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.ConstructorBindingFactory.GetBindings(IMutableEntityType entityType, InstantiationBinding& constructorBinding, InstantiationBinding& serviceOnlyBinding)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.ConstructorBindingConvention.ProcessModelFinalizing(IConventionModelBuilder modelBuilder, IConventionContext`1 context)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.Model.FinalizeModel()
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at GameStore.DAL.Sql.Repositories.Base.SqlRepository`1.CountAsync(Specification`1 specification, CancellationToken token)
+   at GameStore.Core.Services.Sources.GameSource.GetCountWithoutLegacy(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Sources\GameSource.cs:line 194
+   at GameStore.Core.Services.Aggregators.GameProductAggregator.GetCount(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Aggregators\GameProductAggregator.cs:line 36
+   at GameStore.Core.Services.GameService.GetGameCount(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 205
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2026-09-03 18:43:22.337 +03:00 [INF] 
+	Responded in "00:00:03.5757226" with status code 500
+	Response Body: {"type":"InvalidOperationException","status":500,"detail":"No suitable constructor was found for entity type 'OutboxMessage'. The following constructors had parameters that could not be bound to properties of the entity type: \r\n    Cannot bind 'currentTime' in 'OutboxMessage(DateTime currentTime, string messageType, string payload)'\r\nNote that only mapped properties can be bound to constructor parameters. Navigations to related entities, including references to owned types, cannot be bound.","instance":"/"}
+2026-09-03 18:43:22.414 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/favicon.ico
+	User IP address: ::1
+	Request body: 
+2026-09-03 18:43:23.056 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No suitable constructor was found for entity type 'OutboxMessage'. The following constructors had parameters that could not be bound to properties of the entity type: 
+    Cannot bind 'currentTime' in 'OutboxMessage(DateTime currentTime, string messageType, string payload)'
+Note that only mapped properties can be bound to constructor parameters. Navigations to related entities, including references to owned types, cannot be bound.
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.ConstructorBindingFactory.GetBindings[T](T type, Func`5 bindToProperty, Func`5 bind, InstantiationBinding& constructorBinding, InstantiationBinding& serviceOnlyBinding)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.ConstructorBindingFactory.GetBindings(IMutableEntityType entityType, InstantiationBinding& constructorBinding, InstantiationBinding& serviceOnlyBinding)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.ConstructorBindingConvention.ProcessModelFinalizing(IConventionModelBuilder modelBuilder, IConventionContext`1 context)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.Model.FinalizeModel()
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at GameStore.DAL.Sql.Repositories.Base.SqlRepository`1.CountAsync(Specification`1 specification, CancellationToken token)
+   at GameStore.Core.Services.Sources.GameSource.GetCountWithoutLegacy(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Sources\GameSource.cs:line 194
+   at GameStore.Core.Services.Aggregators.GameProductAggregator.GetCount(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Aggregators\GameProductAggregator.cs:line 36
+   at GameStore.Core.Services.GameService.GetGameCount(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 205
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-09-03 18:43:23.318 +03:00 [ERR] Global exception handler caught an error:
+	Exception type: System.InvalidOperationException
+	Source: Microsoft.EntityFrameworkCore
+	Exception message: No suitable constructor was found for entity type 'OutboxMessage'. The following constructors had parameters that could not be bound to properties of the entity type: 
+    Cannot bind 'currentTime' in 'OutboxMessage(DateTime currentTime, string messageType, string payload)'
+Note that only mapped properties can be bound to constructor parameters. Navigations to related entities, including references to owned types, cannot be bound.
+	Inner exception: null
+	Stack Trace: System.InvalidOperationException: No suitable constructor was found for entity type 'OutboxMessage'. The following constructors had parameters that could not be bound to properties of the entity type: 
+    Cannot bind 'currentTime' in 'OutboxMessage(DateTime currentTime, string messageType, string payload)'
+Note that only mapped properties can be bound to constructor parameters. Navigations to related entities, including references to owned types, cannot be bound.
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.ConstructorBindingFactory.GetBindings[T](T type, Func`5 bindToProperty, Func`5 bind, InstantiationBinding& constructorBinding, InstantiationBinding& serviceOnlyBinding)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.ConstructorBindingFactory.GetBindings(IMutableEntityType entityType, InstantiationBinding& constructorBinding, InstantiationBinding& serviceOnlyBinding)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.ConstructorBindingConvention.ProcessModelFinalizing(IConventionModelBuilder modelBuilder, IConventionContext`1 context)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.Model.FinalizeModel()
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at GameStore.DAL.Sql.Repositories.Base.SqlRepository`1.CountAsync(Specification`1 specification, CancellationToken token)
+   at GameStore.Core.Services.Sources.GameSource.GetCountWithoutLegacy(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Sources\GameSource.cs:line 194
+   at GameStore.Core.Services.Aggregators.GameProductAggregator.GetCount(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Aggregators\GameProductAggregator.cs:line 36
+   at GameStore.Core.Services.GameService.GetGameCount(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 205
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+	Exception details:    at Microsoft.EntityFrameworkCore.Metadata.Internal.ConstructorBindingFactory.GetBindings[T](T type, Func`5 bindToProperty, Func`5 bind, InstantiationBinding& constructorBinding, InstantiationBinding& serviceOnlyBinding)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.ConstructorBindingFactory.GetBindings(IMutableEntityType entityType, InstantiationBinding& constructorBinding, InstantiationBinding& serviceOnlyBinding)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.ConstructorBindingConvention.ProcessModelFinalizing(IConventionModelBuilder modelBuilder, IConventionContext`1 context)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.Model.FinalizeModel()
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at GameStore.DAL.Sql.Repositories.Base.SqlRepository`1.CountAsync(Specification`1 specification, CancellationToken token)
+   at GameStore.Core.Services.Sources.GameSource.GetCountWithoutLegacy(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Sources\GameSource.cs:line 194
+   at GameStore.Core.Services.Aggregators.GameProductAggregator.GetCount(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Aggregators\GameProductAggregator.cs:line 36
+   at GameStore.Core.Services.GameService.GetGameCount(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 205
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2026-09-03 18:43:23.401 +03:00 [INF] 
+	Responded in "00:00:00.9866226" with status code 500
+	Response Body: {"type":"InvalidOperationException","status":500,"detail":"No suitable constructor was found for entity type 'OutboxMessage'. The following constructors had parameters that could not be bound to properties of the entity type: \r\n    Cannot bind 'currentTime' in 'OutboxMessage(DateTime currentTime, string messageType, string payload)'\r\nNote that only mapped properties can be bound to constructor parameters. Navigations to related entities, including references to owned types, cannot be bound.","instance":"/favicon.ico"}
+2026-09-03 18:44:12.174 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/
+	User IP address: ::1
+	Request body: 
+2026-09-03 18:44:12.368 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-03 18:44:15.615 +03:00 [INF] 
+	Responded in "00:00:03.4454514" with status code 404
+	Response Body: 
+2026-09-03 18:44:28.542 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/
+	User IP address: ::1
+	Request body: 
+2026-09-03 18:44:29.119 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-03 18:44:33.061 +03:00 [INF] 
+	Responded in "00:00:04.5286458" with status code 404
+	Response Body: 
+2026-09-03 18:44:43.812 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: 
+2026-09-03 18:44:45.358 +03:00 [INF] 
+	Responded in "00:00:01.5458847" with status code 200
+	Response Body: {"games":[{"id":"b0644bc2-7816-42c6-a0e0-87ec0ea4480d","name":"new game","key":"updated-game","description":null,"price":10,"discontinued":0,"unitInStock":5,"publisherId":"561e4058-05ea-4a83-a8aa-e6837f75f95c"},{"id":"d77004b8-e40e-4863-9b92-b3b90d19bc79","name":"double test","key":"triple-test","description":null,"price":40,"discontinued":0,"unitInStock":20,"publisherId":"561e4058-05ea-4a83-a8aa-e6837f75f95c"},{"id":"6a2efa481037e9d7988d6cd3","name":"Chai","key":"chai","description":null,"price":18,"discontinued":0,"unitInStock":39,"publisherId":"6a2efa48bd50fcfc55347d0d"},{"id":"6a2efa481037e9d7988d6cd5","name":"Chef Anton's Cajun Seasoning","key":"chef-antons-cajun-seasoning","description":null,"price":22,"discontinued":0,"unitInStock":53,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6ce2","name":"Sir Rodney's Scones","key":"sir-rodneys-scones","description":null,"price":10,"discontinued":0,"unitInStock":3,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6ced","name":"Schoggi Schokolade","key":"schoggi-schokolade","description":null,"price":43.9,"discontinued":0,"unitInStock":49,"publisherId":"6a2efa48bd50fcfc55347d0a"},{"id":"6a2efa481037e9d7988d6cf2","name":"Geitost","key":"geitost","description":null,"price":2.5,"discontinued":0,"unitInStock":112,"publisherId":"6a2efa48bd50fcfc55347d10"},{"id":"6a2efa481037e9d7988d6cf8","name":"Côte de Blaye","key":"côte-de-blaye","description":null,"price":263.5,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d16"},{"id":"6a2efa481037e9d7988d6cfc","name":"Ipoh Coffee","key":"ipoh-coffee","description":null,"price":46,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d14"},{"id":"6a2efa481037e9d7988d6d04","name":"Valkoinen suklaa","key":"valkoinen-suklaa","description":null,"price":16.25,"discontinued":0,"unitInStock":65,"publisherId":"6a2efa48bd50fcfc55347d19"},{"id":"6a2efa481037e9d7988d6d0e","name":"Sirop d'érable","key":"sirop-dérable","description":null,"price":28.5,"discontinued":0,"unitInStock":113,"publisherId":"6a2efa48bd50fcfc55347d1f"},{"id":"6a2efa481037e9d7988d6d0f","name":"Wimmers gute Semmelknödel","key":"wimmers-gute-semmelknödel","description":null,"price":33.25,"discontinued":0,"unitInStock":22,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6d10","name":"Tarte au sucre","key":"tarte-au-sucre","description":null,"price":49.3,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d1f"},{"id":"6a2efa481037e9d7988d6d11","name":"Vegie-spread","key":"vegie-spread","description":null,"price":43.9,"discontinued":0,"unitInStock":24,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6d17","name":"Gudbrandsdalsost","key":"gudbrandsdalsost","description":null,"price":36,"discontinued":0,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d10"},{"id":"6a2efa481037e9d7988d6d1c","name":"Longlife Tofu","key":"longlife-tofu","description":null,"price":10,"discontinued":0,"unitInStock":4,"publisherId":"6a2efa48bd50fcfc55347d0e"},{"id":"6a2efa481037e9d7988d6cd9","name":"Uncle Bob's Organic Dried Pears","key":"uncle-bobs-organic-dried-pears","description":null,"price":30,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d0f"},{"id":"6a2efa481037e9d7988d6cda","name":"Northwoods Cranberry Sauce","key":"northwoods-cranberry-sauce","description":null,"price":40,"discontinued":0,"unitInStock":6,"publisherId":"6a2efa48bd50fcfc55347d0f"},{"id":"6a2efa481037e9d7988d6cdb","name":"Mishi Kobe Niku","key":"mishi-kobe-niku","description":null,"price":97,"discontinued":1,"unitInStock":29,"publisherId":"6a2efa48bd50fcfc55347d0e"},{"id":"6a2efa481037e9d7988d6cdd","name":"Pavlova","key":"pavlova","description":null,"price":17.45,"discontinued":0,"unitInStock":29,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6ce0","name":"Teatime Chocolate Biscuits","key":"teatime-chocolate-biscuits","description":null,"price":9.2,"discontinued":0,"unitInStock":25,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6ce3","name":"Genen Shouyu","key":"genen-shouyu","description":null,"price":15.5,"discontinued":0,"unitInStock":39,"publisherId":"6a2efa48bd50fcfc55347d04"},{"id":"6a2efa481037e9d7988d6ce5","name":"Gustaf's Knäckebröd","key":"gustafs-knäckebröd","description":null,"price":21,"discontinued":0,"unitInStock":104,"publisherId":"6a2efa48bd50fcfc55347d07"},{"id":"6a2efa481037e9d7988d6ce6","name":"Tofu","key":"tofu","description":null,"price":23.25,"discontinued":0,"unitInStock":35,"publisherId":"6a2efa48bd50fcfc55347d04"},{"id":"6a2efa481037e9d7988d6ce8","name":"Konbu","key":"konbu","description":null,"price":6,"discontinued":0,"unitInStock":24,"publisherId":"6a2efa48bd50fcfc55347d04"},{"id":"6a2efa481037e9d7988d6cee","name":"Rössle Sauerkraut","key":"rössle-sauerkraut","description":null,"price":45.6,"discontinued":1,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6cf1","name":"Mascarpone Fabioli","key":"mascarpone-fabioli","description":null,"price":32,"discontinued":0,"unitInStock":9,"publisherId":"6a2efa48bd50fcfc55347d11"},{"id":"6a2efa481037e9d7988d6cf3","name":"Sasquatch Ale","key":"sasquatch-ale","description":null,"price":14,"discontinued":0,"unitInStock":111,"publisherId":"6a2efa48bd50fcfc55347d13"},{"id":"6a2efa481037e9d7988d6cf5","name":"Inlagd Sill","key":"inlagd-sill","description":null,"price":19,"discontinued":0,"unitInStock":112,"publisherId":"6a2efa48bd50fcfc55347d12"},{"id":"6a2efa481037e9d7988d6cf7","name":"Gravad lax","key":"gravad-lax","description":null,"price":26,"discontinued":0,"unitInStock":11,"publisherId":"6a2efa48bd50fcfc55347d12"},{"id":"6a2efa481037e9d7988d6cfa","name":"Boston Crab Meat","key":"boston-crab-meat","description":null,"price":18.4,"discontinued":0,"unitInStock":123,"publisherId":"6a2efa48bd50fcfc55347d18"},{"id":"6a2efa481037e9d7988d6cfd","name":"Jack's New England Clam Chowder","key":"jacks-new-england-clam-chowder","description":null,"price":9.65,"discontinued":0,"unitInStock":85,"publisherId":"6a2efa48bd50fcfc55347d18"},{"id":"6a2efa481037e9d7988d6cfe","name":"Gula Malacca","key":"gula-malacca","description":null,"price":19.45,"discontinued":0,"unitInStock":27,"publisherId":"6a2efa48bd50fcfc55347d14"},{"id":"6a2efa481037e9d7988d6d02","name":"Chocolade","key":"chocolade","description":null,"price":12.75,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d17"},{"id":"6a2efa481037e9d7988d6d03","name":"Maxilaku","key":"maxilaku","description":null,"price":20,"discontinued":0,"unitInStock":10,"publisherId":"6a2efa48bd50fcfc55347d19"},{"id":"6a2efa481037e9d7988d6d05","name":"Manjimup Dried Apples","key":"manjimup-dried-apples","description":null,"price":53,"discontinued":0,"unitInStock":20,"publisherId":"6a2efa48bd50fcfc55347d1a"},{"id":"6a2efa481037e9d7988d6d06","name":"Filo Mix","key":"filo-mix","description":null,"price":7,"discontinued":0,"unitInStock":38,"publisherId":"6a2efa48bd50fcfc55347d1a"},{"id":"6a2efa481037e9d7988d6d07","name":"Tourtière","key":"tourtière","description":null,"price":7.45,"discontinued":0,"unitInStock":21,"publisherId":"6a2efa48bd50fcfc55347d1b"},{"id":"6a2efa481037e9d7988d6d09","name":"Gnocchi di nonna Alice","key":"gnocchi-di-nonna-alice","description":null,"price":38,"discontinued":0,"unitInStock":21,"publisherId":"6a2efa48bd50fcfc55347d1d"},{"id":"6a2efa481037e9d7988d6d0a","name":"Escargots de Bourgogne","key":"escargots-de-bourgogne","description":null,"price":13.25,"discontinued":0,"unitInStock":62,"publisherId":"6a2efa48bd50fcfc55347d1c"},{"id":"6a2efa481037e9d7988d6d13","name":"Louisiana Fiery Hot Pepper Sauce","key":"louisiana-fiery-hot-pepper-sauce","description":null,"price":21.05,"discontinued":0,"unitInStock":76,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6d1b","name":"Röd Kaviar","key":"röd-kaviar","description":null,"price":15,"discontinued":0,"unitInStock":101,"publisherId":"6a2efa48bd50fcfc55347d12"},{"id":"6a2efa481037e9d7988d6d1e","name":"Lakkalikööri","key":"lakkalikööri","description":null,"price":18,"discontinued":0,"unitInStock":57,"publisherId":"6a2efa48bd50fcfc55347d19"},{"id":"6a2efa481037e9d7988d6cd4","name":"Aniseed Syrup","key":"aniseed-syrup","description":null,"price":10,"discontinued":0,"unitInStock":13,"publisherId":"6a2efa48bd50fcfc55347d0d"},{"id":"6a2efa481037e9d7988d6cd7","name":"Chang","key":"chang","description":null,"price":19,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d0d"},{"id":"6a2efa481037e9d7988d6cd8","name":"Grandma's Boysenberry Spread","key":"grandmas-boysenberry-spread","description":null,"price":25,"discontinued":0,"unitInStock":120,"publisherId":"6a2efa48bd50fcfc55347d0f"},{"id":"6a2efa481037e9d7988d6cdc","name":"Ikura","key":"ikura","description":null,"price":31,"discontinued":0,"unitInStock":31,"publisherId":"6a2efa48bd50fcfc55347d0e"},{"id":"6a2efa481037e9d7988d6cde","name":"Alice Mutton","key":"alice-mutton","description":null,"price":39,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6ce4","name":"Queso Manchego La Pastora","key":"queso-manchego-la-pastora","description":null,"price":38,"discontinued":0,"unitInStock":86,"publisherId":"6a2efa48bd50fcfc55347d03"},{"id":"6a2efa481037e9d7988d6ce7","name":"Queso Cabrales","key":"queso-cabrales","description":null,"price":21,"discontinued":0,"unitInStock":22,"publisherId":"6a2efa48bd50fcfc55347d03"},{"id":"6a2efa481037e9d7988d6ce9","name":"Tunnbröd","key":"tunnbröd","description":null,"price":9,"discontinued":0,"unitInStock":61,"publisherId":"6a2efa48bd50fcfc55347d07"},{"id":"6a2efa481037e9d7988d6cea","name":"Guaraná Fantástica","key":"guaraná-fantástica","description":null,"price":4.5,"discontinued":1,"unitInStock":20,"publisherId":"6a2efa48bd50fcfc55347d08"},{"id":"6a2efa481037e9d7988d6cec","name":"Gumbär Gummibärchen","key":"gumbär-gummibärchen","description":null,"price":31.23,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d0a"},{"id":"6a2efa481037e9d7988d6cf4","name":"Thüringer Rostbratwurst","key":"thüringer-rostbratwurst","description":null,"price":123.79,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6cf6","name":"Steeleye Stout","key":"steeleye-stout","description":null,"price":18,"discontinued":0,"unitInStock":20,"publisherId":"6a2efa48bd50fcfc55347d13"},{"id":"6a2efa481037e9d7988d6d00","name":"Zaanse koeken","key":"zaanse-koeken","description":null,"price":9.5,"discontinued":0,"unitInStock":36,"publisherId":"6a2efa48bd50fcfc55347d17"},{"id":"6a2efa481037e9d7988d6d01","name":"Rogede sild","key":"rogede-sild","description":null,"price":9.5,"discontinued":0,"unitInStock":5,"publisherId":"6a2efa48bd50fcfc55347d15"},{"id":"6a2efa481037e9d7988d6d0d","name":"Camembert Pierrot","key":"camembert-pierrot","description":null,"price":34,"discontinued":0,"unitInStock":19,"publisherId":"6a2efa48bd50fcfc55347d1e"},{"id":"6a2efa481037e9d7988d6d12","name":"Ravioli Angelo","key":"ravioli-angelo","description":null,"price":19.5,"discontinued":0,"unitInStock":36,"publisherId":"6a2efa48bd50fcfc55347d1d"},{"id":"6a2efa481037e9d7988d6d14","name":"Louisiana Hot Spiced Okra","key":"louisiana-hot-spiced-okra","description":null,"price":17,"discontinued":0,"unitInStock":4,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6d18","name":"Outback Lager","key":"outback-lager","description":null,"price":15,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6d1a","name":"Mozzarella di Giovanni","key":"mozzarella-di-giovanni","description":null,"price":34.8,"discontinued":0,"unitInStock":14,"publisherId":"6a2efa48bd50fcfc55347d11"},{"id":"6a2efa481037e9d7988d6d1d","name":"Rhönbräu Klosterbier","key":"rhönbräu-klosterbier","description":null,"price":7.75,"discontinued":0,"unitInStock":125,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6cd6","name":"Chef Anton's Gumbo Mix","key":"chef-antons-gumbo-mix","description":null,"price":21.35,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6cdf","name":"Carnarvon Tigers","key":"carnarvon-tigers","description":null,"price":62.5,"discontinued":0,"unitInStock":42,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6ce1","name":"Sir Rodney's Marmalade","key":"sir-rodneys-marmalade","description":null,"price":81,"discontinued":0,"unitInStock":40,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6ceb","name":"NuNuCa Nuß-Nougat-Creme","key":"nunuca-nuß-nougat-creme","description":null,"price":14,"discontinued":0,"unitInStock":76,"publisherId":"6a2efa48bd50fcfc55347d0a"},{"id":"6a2efa481037e9d7988d6cef","name":"Nord-Ost Matjeshering","key":"nord-ost-matjeshering","description":null,"price":25.89,"discontinued":0,"unitInStock":10,"publisherId":"6a2efa48bd50fcfc55347d0b"},{"id":"6a2efa481037e9d7988d6cf0","name":"Gorgonzola Telino","key":"gorgonzola-telino","description":null,"price":12.5,"discontinued":0,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d11"},{"id":"6a2efa481037e9d7988d6cf9","name":"Chartreuse verte","key":"chartreuse-verte","description":null,"price":18,"discontinued":0,"unitInStock":69,"publisherId":"6a2efa48bd50fcfc55347d16"},{"id":"6a2efa481037e9d7988d6cfb","name":"Singaporean Hokkien Fried Mee","key":"singaporean-hokkien-fried-mee","description":null,"price":14,"discontinued":1,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d14"},{"id":"6a2efa481037e9d7988d6cff","name":"Spegesild","key":"spegesild","description":null,"price":12,"discontinued":0,"unitInStock":95,"publisherId":"6a2efa48bd50fcfc55347d15"},{"id":"6a2efa481037e9d7988d6d08","name":"Perth Pasties","key":"perth-pasties","description":null,"price":32.8,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d1a"},{"id":"6a2efa481037e9d7988d6d0b","name":"Pâté chinois","key":"pâté-chinois","description":null,"price":24,"discontinued":0,"unitInStock":115,"publisherId":"6a2efa48bd50fcfc55347d1b"},{"id":"6a2efa481037e9d7988d6d0c","name":"Raclette Courdavault","key":"raclette-courdavault","description":null,"price":55,"discontinued":0,"unitInStock":79,"publisherId":"6a2efa48bd50fcfc55347d1e"},{"id":"6a2efa481037e9d7988d6d15","name":"Laughing Lumberjack Lager","key":"laughing-lumberjack-lager","description":null,"price":14,"discontinued":0,"unitInStock":52,"publisherId":"6a2efa48bd50fcfc55347d13"},{"id":"6a2efa481037e9d7988d6d16","name":"Scottish Longbreads","key":"scottish-longbreads","description":null,"price":12.5,"discontinued":0,"unitInStock":6,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6d19","name":"Flotemysost","key":"flotemysost","description":null,"price":21.5,"discontinued":0,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d10"},{"id":"6a2efa481037e9d7988d6d1f","name":"Original Frankfurter grüne Soße","key":"original-frankfurter-grüne-soße","description":null,"price":13,"discontinued":0,"unitInStock":32,"publisherId":"6a2efa48bd50fcfc55347d09"}],"totalPages":1,"currentPage":1}
+2026-09-03 18:45:02.761 +03:00 [INF] 
+	Request type: POST
+	Url: https://localhost:7153/api/Publishers
+	User IP address: ::1
+	Request body: {
+  "publisher": {
+    "companyName": "publisherrrrr"
+  }
+}
+2026-09-03 18:45:03.834 +03:00 [ERR] Failed executing DbCommand (20ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Guid), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 300), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 500), @p13='?' (Size = 4000), @p14='?' (Size = 200), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OutboxMessages] ([Id], [CompletedAt], [CreatedDate], [MessageType], [Payload])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+INSERT INTO [Publishers] ([Id], [Address], [City], [CompanyName], [ContactName], [ContactTitle], [Country], [Description], [Fax], [HomePage], [LegacyId], [Phone], [PostalCode], [Region])
+VALUES (@p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+2026-09-03 18:45:03.942 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'GameStore.DAL.Sql.Data.GameStoreDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'OutboxMessages'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:266563c7-d485-4607-9df9-fef802722e9d
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'OutboxMessages'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:266563c7-d485-4607-9df9-fef802722e9d
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-09-03 18:45:05.092 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+GameStore.Models.Exceptions.UpdateException: Exception of type 'GameStore.Models.Exceptions.UpdateException' was thrown.
+   at GameStore.DAL.Sql.Data.GameStoreUnitOfWork.SaveChangesAsync(CancellationToken cancellationToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL\Sql\Data\GameStoreUnitOfWork.cs:line 47
+   at GameStore.Core.Services.Sources.PublisherSource.CreatePublisher(PublisherDetailsBase details, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Sources\PublisherSource.cs:line 38
+   at GameStore.Core.Services.PublisherService.CreatePublisher(CreatePublisherRequest request, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\PublisherService.cs:line 25
+   at GameStore.Web.Controllers.PublishersController.CreatePublisher(CreatePublisherRequest request, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Controllers\PublishersController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-09-03 18:45:05.130 +03:00 [ERR] Global exception handler caught an error:
+	Exception type: GameStore.Models.Exceptions.UpdateException
+	Source: GameStore.DAL
+	Exception message: Exception of type 'GameStore.Models.Exceptions.UpdateException' was thrown.
+	Inner exception: null
+	Stack Trace: GameStore.Models.Exceptions.UpdateException: Exception of type 'GameStore.Models.Exceptions.UpdateException' was thrown.
+   at GameStore.DAL.Sql.Data.GameStoreUnitOfWork.SaveChangesAsync(CancellationToken cancellationToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL\Sql\Data\GameStoreUnitOfWork.cs:line 47
+   at GameStore.Core.Services.Sources.PublisherSource.CreatePublisher(PublisherDetailsBase details, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Sources\PublisherSource.cs:line 38
+   at GameStore.Core.Services.PublisherService.CreatePublisher(CreatePublisherRequest request, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\PublisherService.cs:line 25
+   at GameStore.Web.Controllers.PublishersController.CreatePublisher(CreatePublisherRequest request, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Controllers\PublishersController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+	Exception details:    at GameStore.DAL.Sql.Data.GameStoreUnitOfWork.SaveChangesAsync(CancellationToken cancellationToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL\Sql\Data\GameStoreUnitOfWork.cs:line 47
+   at GameStore.Core.Services.Sources.PublisherSource.CreatePublisher(PublisherDetailsBase details, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\Sources\PublisherSource.cs:line 38
+   at GameStore.Core.Services.PublisherService.CreatePublisher(CreatePublisherRequest request, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\PublisherService.cs:line 25
+   at GameStore.Web.Controllers.PublishersController.CreatePublisher(CreatePublisherRequest request, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Controllers\PublishersController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2026-09-03 18:45:05.171 +03:00 [INF] 
+	Responded in "00:00:02.4117032" with status code 500
+	Response Body: {"type":"UpdateException","status":500,"detail":"Exception of type 'GameStore.Models.Exceptions.UpdateException' was thrown.","instance":"/api/Publishers"}
+2026-09-03 18:45:59.417 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/
+	User IP address: ::1
+	Request body: 
+2026-09-03 18:45:59.679 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-03 18:46:03.466 +03:00 [INF] 
+	Responded in "00:00:04.0538224" with status code 404
+	Response Body: 
+2026-09-03 18:46:22.477 +03:00 [INF] 
+	Request type: POST
+	Url: https://localhost:7153/api/Publishers
+	User IP address: ::1
+	Request body: {
+  "publisher": {
+    "companyName": "string"
+  }
+}
+2026-09-03 20:23:40.142 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/
+	User IP address: ::1
+	Request body: 
+2026-09-03 20:23:40.479 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-03 20:23:41.188 +03:00 [INF] 
+	Responded in "00:00:01.0586158" with status code 404
+	Response Body: 
+2026-09-03 20:23:53.896 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: 
+2026-09-03 20:23:54.848 +03:00 [INF] 
+	Responded in "00:00:00.9517030" with status code 200
+	Response Body: {"games":[{"id":"b0644bc2-7816-42c6-a0e0-87ec0ea4480d","name":"new game","key":"updated-game","description":null,"price":10,"discontinued":0,"unitInStock":5,"publisherId":"561e4058-05ea-4a83-a8aa-e6837f75f95c"},{"id":"d77004b8-e40e-4863-9b92-b3b90d19bc79","name":"double test","key":"triple-test","description":null,"price":40,"discontinued":0,"unitInStock":20,"publisherId":"561e4058-05ea-4a83-a8aa-e6837f75f95c"},{"id":"6a2efa481037e9d7988d6cd3","name":"Chai","key":"chai","description":null,"price":18,"discontinued":0,"unitInStock":39,"publisherId":"6a2efa48bd50fcfc55347d0d"},{"id":"6a2efa481037e9d7988d6cd5","name":"Chef Anton's Cajun Seasoning","key":"chef-antons-cajun-seasoning","description":null,"price":22,"discontinued":0,"unitInStock":53,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6ce2","name":"Sir Rodney's Scones","key":"sir-rodneys-scones","description":null,"price":10,"discontinued":0,"unitInStock":3,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6ced","name":"Schoggi Schokolade","key":"schoggi-schokolade","description":null,"price":43.9,"discontinued":0,"unitInStock":49,"publisherId":"6a2efa48bd50fcfc55347d0a"},{"id":"6a2efa481037e9d7988d6cf2","name":"Geitost","key":"geitost","description":null,"price":2.5,"discontinued":0,"unitInStock":112,"publisherId":"6a2efa48bd50fcfc55347d10"},{"id":"6a2efa481037e9d7988d6cf8","name":"Côte de Blaye","key":"côte-de-blaye","description":null,"price":263.5,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d16"},{"id":"6a2efa481037e9d7988d6cfc","name":"Ipoh Coffee","key":"ipoh-coffee","description":null,"price":46,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d14"},{"id":"6a2efa481037e9d7988d6d04","name":"Valkoinen suklaa","key":"valkoinen-suklaa","description":null,"price":16.25,"discontinued":0,"unitInStock":65,"publisherId":"6a2efa48bd50fcfc55347d19"},{"id":"6a2efa481037e9d7988d6d0e","name":"Sirop d'érable","key":"sirop-dérable","description":null,"price":28.5,"discontinued":0,"unitInStock":113,"publisherId":"6a2efa48bd50fcfc55347d1f"},{"id":"6a2efa481037e9d7988d6d0f","name":"Wimmers gute Semmelknödel","key":"wimmers-gute-semmelknödel","description":null,"price":33.25,"discontinued":0,"unitInStock":22,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6d10","name":"Tarte au sucre","key":"tarte-au-sucre","description":null,"price":49.3,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d1f"},{"id":"6a2efa481037e9d7988d6d11","name":"Vegie-spread","key":"vegie-spread","description":null,"price":43.9,"discontinued":0,"unitInStock":24,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6d17","name":"Gudbrandsdalsost","key":"gudbrandsdalsost","description":null,"price":36,"discontinued":0,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d10"},{"id":"6a2efa481037e9d7988d6d1c","name":"Longlife Tofu","key":"longlife-tofu","description":null,"price":10,"discontinued":0,"unitInStock":4,"publisherId":"6a2efa48bd50fcfc55347d0e"},{"id":"6a2efa481037e9d7988d6cd9","name":"Uncle Bob's Organic Dried Pears","key":"uncle-bobs-organic-dried-pears","description":null,"price":30,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d0f"},{"id":"6a2efa481037e9d7988d6cda","name":"Northwoods Cranberry Sauce","key":"northwoods-cranberry-sauce","description":null,"price":40,"discontinued":0,"unitInStock":6,"publisherId":"6a2efa48bd50fcfc55347d0f"},{"id":"6a2efa481037e9d7988d6cdb","name":"Mishi Kobe Niku","key":"mishi-kobe-niku","description":null,"price":97,"discontinued":1,"unitInStock":29,"publisherId":"6a2efa48bd50fcfc55347d0e"},{"id":"6a2efa481037e9d7988d6cdd","name":"Pavlova","key":"pavlova","description":null,"price":17.45,"discontinued":0,"unitInStock":29,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6ce0","name":"Teatime Chocolate Biscuits","key":"teatime-chocolate-biscuits","description":null,"price":9.2,"discontinued":0,"unitInStock":25,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6ce3","name":"Genen Shouyu","key":"genen-shouyu","description":null,"price":15.5,"discontinued":0,"unitInStock":39,"publisherId":"6a2efa48bd50fcfc55347d04"},{"id":"6a2efa481037e9d7988d6ce5","name":"Gustaf's Knäckebröd","key":"gustafs-knäckebröd","description":null,"price":21,"discontinued":0,"unitInStock":104,"publisherId":"6a2efa48bd50fcfc55347d07"},{"id":"6a2efa481037e9d7988d6ce6","name":"Tofu","key":"tofu","description":null,"price":23.25,"discontinued":0,"unitInStock":35,"publisherId":"6a2efa48bd50fcfc55347d04"},{"id":"6a2efa481037e9d7988d6ce8","name":"Konbu","key":"konbu","description":null,"price":6,"discontinued":0,"unitInStock":24,"publisherId":"6a2efa48bd50fcfc55347d04"},{"id":"6a2efa481037e9d7988d6cee","name":"Rössle Sauerkraut","key":"rössle-sauerkraut","description":null,"price":45.6,"discontinued":1,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6cf1","name":"Mascarpone Fabioli","key":"mascarpone-fabioli","description":null,"price":32,"discontinued":0,"unitInStock":9,"publisherId":"6a2efa48bd50fcfc55347d11"},{"id":"6a2efa481037e9d7988d6cf3","name":"Sasquatch Ale","key":"sasquatch-ale","description":null,"price":14,"discontinued":0,"unitInStock":111,"publisherId":"6a2efa48bd50fcfc55347d13"},{"id":"6a2efa481037e9d7988d6cf5","name":"Inlagd Sill","key":"inlagd-sill","description":null,"price":19,"discontinued":0,"unitInStock":112,"publisherId":"6a2efa48bd50fcfc55347d12"},{"id":"6a2efa481037e9d7988d6cf7","name":"Gravad lax","key":"gravad-lax","description":null,"price":26,"discontinued":0,"unitInStock":11,"publisherId":"6a2efa48bd50fcfc55347d12"},{"id":"6a2efa481037e9d7988d6cfa","name":"Boston Crab Meat","key":"boston-crab-meat","description":null,"price":18.4,"discontinued":0,"unitInStock":123,"publisherId":"6a2efa48bd50fcfc55347d18"},{"id":"6a2efa481037e9d7988d6cfd","name":"Jack's New England Clam Chowder","key":"jacks-new-england-clam-chowder","description":null,"price":9.65,"discontinued":0,"unitInStock":85,"publisherId":"6a2efa48bd50fcfc55347d18"},{"id":"6a2efa481037e9d7988d6cfe","name":"Gula Malacca","key":"gula-malacca","description":null,"price":19.45,"discontinued":0,"unitInStock":27,"publisherId":"6a2efa48bd50fcfc55347d14"},{"id":"6a2efa481037e9d7988d6d02","name":"Chocolade","key":"chocolade","description":null,"price":12.75,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d17"},{"id":"6a2efa481037e9d7988d6d03","name":"Maxilaku","key":"maxilaku","description":null,"price":20,"discontinued":0,"unitInStock":10,"publisherId":"6a2efa48bd50fcfc55347d19"},{"id":"6a2efa481037e9d7988d6d05","name":"Manjimup Dried Apples","key":"manjimup-dried-apples","description":null,"price":53,"discontinued":0,"unitInStock":20,"publisherId":"6a2efa48bd50fcfc55347d1a"},{"id":"6a2efa481037e9d7988d6d06","name":"Filo Mix","key":"filo-mix","description":null,"price":7,"discontinued":0,"unitInStock":38,"publisherId":"6a2efa48bd50fcfc55347d1a"},{"id":"6a2efa481037e9d7988d6d07","name":"Tourtière","key":"tourtière","description":null,"price":7.45,"discontinued":0,"unitInStock":21,"publisherId":"6a2efa48bd50fcfc55347d1b"},{"id":"6a2efa481037e9d7988d6d09","name":"Gnocchi di nonna Alice","key":"gnocchi-di-nonna-alice","description":null,"price":38,"discontinued":0,"unitInStock":21,"publisherId":"6a2efa48bd50fcfc55347d1d"},{"id":"6a2efa481037e9d7988d6d0a","name":"Escargots de Bourgogne","key":"escargots-de-bourgogne","description":null,"price":13.25,"discontinued":0,"unitInStock":62,"publisherId":"6a2efa48bd50fcfc55347d1c"},{"id":"6a2efa481037e9d7988d6d13","name":"Louisiana Fiery Hot Pepper Sauce","key":"louisiana-fiery-hot-pepper-sauce","description":null,"price":21.05,"discontinued":0,"unitInStock":76,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6d1b","name":"Röd Kaviar","key":"röd-kaviar","description":null,"price":15,"discontinued":0,"unitInStock":101,"publisherId":"6a2efa48bd50fcfc55347d12"},{"id":"6a2efa481037e9d7988d6d1e","name":"Lakkalikööri","key":"lakkalikööri","description":null,"price":18,"discontinued":0,"unitInStock":57,"publisherId":"6a2efa48bd50fcfc55347d19"},{"id":"6a2efa481037e9d7988d6cd4","name":"Aniseed Syrup","key":"aniseed-syrup","description":null,"price":10,"discontinued":0,"unitInStock":13,"publisherId":"6a2efa48bd50fcfc55347d0d"},{"id":"6a2efa481037e9d7988d6cd7","name":"Chang","key":"chang","description":null,"price":19,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d0d"},{"id":"6a2efa481037e9d7988d6cd8","name":"Grandma's Boysenberry Spread","key":"grandmas-boysenberry-spread","description":null,"price":25,"discontinued":0,"unitInStock":120,"publisherId":"6a2efa48bd50fcfc55347d0f"},{"id":"6a2efa481037e9d7988d6cdc","name":"Ikura","key":"ikura","description":null,"price":31,"discontinued":0,"unitInStock":31,"publisherId":"6a2efa48bd50fcfc55347d0e"},{"id":"6a2efa481037e9d7988d6cde","name":"Alice Mutton","key":"alice-mutton","description":null,"price":39,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6ce4","name":"Queso Manchego La Pastora","key":"queso-manchego-la-pastora","description":null,"price":38,"discontinued":0,"unitInStock":86,"publisherId":"6a2efa48bd50fcfc55347d03"},{"id":"6a2efa481037e9d7988d6ce7","name":"Queso Cabrales","key":"queso-cabrales","description":null,"price":21,"discontinued":0,"unitInStock":22,"publisherId":"6a2efa48bd50fcfc55347d03"},{"id":"6a2efa481037e9d7988d6ce9","name":"Tunnbröd","key":"tunnbröd","description":null,"price":9,"discontinued":0,"unitInStock":61,"publisherId":"6a2efa48bd50fcfc55347d07"},{"id":"6a2efa481037e9d7988d6cea","name":"Guaraná Fantástica","key":"guaraná-fantástica","description":null,"price":4.5,"discontinued":1,"unitInStock":20,"publisherId":"6a2efa48bd50fcfc55347d08"},{"id":"6a2efa481037e9d7988d6cec","name":"Gumbär Gummibärchen","key":"gumbär-gummibärchen","description":null,"price":31.23,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d0a"},{"id":"6a2efa481037e9d7988d6cf4","name":"Thüringer Rostbratwurst","key":"thüringer-rostbratwurst","description":null,"price":123.79,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6cf6","name":"Steeleye Stout","key":"steeleye-stout","description":null,"price":18,"discontinued":0,"unitInStock":20,"publisherId":"6a2efa48bd50fcfc55347d13"},{"id":"6a2efa481037e9d7988d6d00","name":"Zaanse koeken","key":"zaanse-koeken","description":null,"price":9.5,"discontinued":0,"unitInStock":36,"publisherId":"6a2efa48bd50fcfc55347d17"},{"id":"6a2efa481037e9d7988d6d01","name":"Rogede sild","key":"rogede-sild","description":null,"price":9.5,"discontinued":0,"unitInStock":5,"publisherId":"6a2efa48bd50fcfc55347d15"},{"id":"6a2efa481037e9d7988d6d0d","name":"Camembert Pierrot","key":"camembert-pierrot","description":null,"price":34,"discontinued":0,"unitInStock":19,"publisherId":"6a2efa48bd50fcfc55347d1e"},{"id":"6a2efa481037e9d7988d6d12","name":"Ravioli Angelo","key":"ravioli-angelo","description":null,"price":19.5,"discontinued":0,"unitInStock":36,"publisherId":"6a2efa48bd50fcfc55347d1d"},{"id":"6a2efa481037e9d7988d6d14","name":"Louisiana Hot Spiced Okra","key":"louisiana-hot-spiced-okra","description":null,"price":17,"discontinued":0,"unitInStock":4,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6d18","name":"Outback Lager","key":"outback-lager","description":null,"price":15,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6d1a","name":"Mozzarella di Giovanni","key":"mozzarella-di-giovanni","description":null,"price":34.8,"discontinued":0,"unitInStock":14,"publisherId":"6a2efa48bd50fcfc55347d11"},{"id":"6a2efa481037e9d7988d6d1d","name":"Rhönbräu Klosterbier","key":"rhönbräu-klosterbier","description":null,"price":7.75,"discontinued":0,"unitInStock":125,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6cd6","name":"Chef Anton's Gumbo Mix","key":"chef-antons-gumbo-mix","description":null,"price":21.35,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6cdf","name":"Carnarvon Tigers","key":"carnarvon-tigers","description":null,"price":62.5,"discontinued":0,"unitInStock":42,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6ce1","name":"Sir Rodney's Marmalade","key":"sir-rodneys-marmalade","description":null,"price":81,"discontinued":0,"unitInStock":40,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6ceb","name":"NuNuCa Nuß-Nougat-Creme","key":"nunuca-nuß-nougat-creme","description":null,"price":14,"discontinued":0,"unitInStock":76,"publisherId":"6a2efa48bd50fcfc55347d0a"},{"id":"6a2efa481037e9d7988d6cef","name":"Nord-Ost Matjeshering","key":"nord-ost-matjeshering","description":null,"price":25.89,"discontinued":0,"unitInStock":10,"publisherId":"6a2efa48bd50fcfc55347d0b"},{"id":"6a2efa481037e9d7988d6cf0","name":"Gorgonzola Telino","key":"gorgonzola-telino","description":null,"price":12.5,"discontinued":0,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d11"},{"id":"6a2efa481037e9d7988d6cf9","name":"Chartreuse verte","key":"chartreuse-verte","description":null,"price":18,"discontinued":0,"unitInStock":69,"publisherId":"6a2efa48bd50fcfc55347d16"},{"id":"6a2efa481037e9d7988d6cfb","name":"Singaporean Hokkien Fried Mee","key":"singaporean-hokkien-fried-mee","description":null,"price":14,"discontinued":1,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d14"},{"id":"6a2efa481037e9d7988d6cff","name":"Spegesild","key":"spegesild","description":null,"price":12,"discontinued":0,"unitInStock":95,"publisherId":"6a2efa48bd50fcfc55347d15"},{"id":"6a2efa481037e9d7988d6d08","name":"Perth Pasties","key":"perth-pasties","description":null,"price":32.8,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d1a"},{"id":"6a2efa481037e9d7988d6d0b","name":"Pâté chinois","key":"pâté-chinois","description":null,"price":24,"discontinued":0,"unitInStock":115,"publisherId":"6a2efa48bd50fcfc55347d1b"},{"id":"6a2efa481037e9d7988d6d0c","name":"Raclette Courdavault","key":"raclette-courdavault","description":null,"price":55,"discontinued":0,"unitInStock":79,"publisherId":"6a2efa48bd50fcfc55347d1e"},{"id":"6a2efa481037e9d7988d6d15","name":"Laughing Lumberjack Lager","key":"laughing-lumberjack-lager","description":null,"price":14,"discontinued":0,"unitInStock":52,"publisherId":"6a2efa48bd50fcfc55347d13"},{"id":"6a2efa481037e9d7988d6d16","name":"Scottish Longbreads","key":"scottish-longbreads","description":null,"price":12.5,"discontinued":0,"unitInStock":6,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6d19","name":"Flotemysost","key":"flotemysost","description":null,"price":21.5,"discontinued":0,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d10"},{"id":"6a2efa481037e9d7988d6d1f","name":"Original Frankfurter grüne Soße","key":"original-frankfurter-grüne-soße","description":null,"price":13,"discontinued":0,"unitInStock":32,"publisherId":"6a2efa48bd50fcfc55347d09"}],"totalPages":1,"currentPage":1}
+2026-09-03 20:25:22.713 +03:00 [INF] 
+	Request type: PUT
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: {
+  "game": {
+      "id": "6a2efa481037e9d7988d6cd3",
+      "name": "Chai",
+      "key": "chai",
+      "description": "new description for chai",
+      "price": 18,
+      "discontinued": 0,
+      "unitInStock": 39,
+  },
+  "publisher": "6a2efa48bd50fcfc55347d0d"
+}
+2026-09-03 20:25:22.904 +03:00 [INF] 
+	Responded in "00:00:00.1915748" with status code 400
+	Response Body: {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"request":["The request field is required."],"$.game":["The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $.game | LineNumber: 9 | BytePositionInLine: 2."]},"traceId":"00-c05e35d6284eaf561e540a6fd9fb3532-3fd1dae5084d5b96-00"}
+2026-09-03 20:25:41.609 +03:00 [INF] 
+	Request type: PUT
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: {
+  "game": {
+      "name": "Chai",
+      "key": "chai",
+      "description": "new description for chai",
+      "price": 18,
+      "discontinued": 0,
+      "unitInStock": 39,
+      "id": "6a2efa481037e9d7988d6cd3"
+  },
+  "publisher": "6a2efa48bd50fcfc55347d0d"
+}
+2026-09-03 20:25:41.632 +03:00 [INF] 
+	Responded in "00:00:00.0230097" with status code 400
+	Response Body: {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"request":["The request field is required."],"$.game":["JSON deserialization for type 'GameStore.Core.Dto.Details.Game.GameDetailsWithId' was missing required properties, including the following: discount"]},"traceId":"00-7e7efd01bcf8502a6d18fb0a08472ecd-d2e13d9f91c62cd5-00"}
+2026-09-03 20:26:44.009 +03:00 [INF] 
+	Request type: PUT
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: {
+  "game": {
+      "name": "Chai",
+      "key": "chai",
+      "description": "new description for chai",
+      "price": 18,
+      "discount": 0
+      "discontinued": 0,
+      "unitInStock": 39,
+      "id": "6a2efa481037e9d7988d6cd3"
+  },
+  "publisher": "6a2efa48bd50fcfc55347d0d"
+}
+2026-09-03 20:26:44.087 +03:00 [INF] 
+	Responded in "00:00:00.0786611" with status code 400
+	Response Body: {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"request":["The request field is required."],"$.game":["'\"' is invalid after a value. Expected either ',', '}', or ']'. Path: $.game | LineNumber: 7 | BytePositionInLine: 6."]},"traceId":"00-8c66df994fd51e9f944fce0c8e4625a0-69809286243e0525-00"}
+2026-09-03 20:26:49.763 +03:00 [INF] 
+	Request type: PUT
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: {
+  "game": {
+      "name": "Chai",
+      "key": "chai",
+      "description": "new description for chai",
+      "price": 18,
+      "discount": 0,
+      "discontinued": 0,
+      "unitInStock": 39,
+      "id": "6a2efa481037e9d7988d6cd3"
+  },
+  "publisher": "6a2efa48bd50fcfc55347d0d"
+}
+2026-09-03 20:26:51.323 +03:00 [INF] 
+	Responded in "00:00:01.5605606" with status code 204
+	Response Body: 
+2026-09-03 20:41:12.544 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/
+	User IP address: ::1
+	Request body: 
+2026-09-03 20:41:12.682 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-03 20:41:13.193 +03:00 [INF] 
+	Responded in "00:00:00.6532214" with status code 404
+	Response Body: 
+2026-09-03 20:42:47.409 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: 
+2026-09-03 20:42:47.982 +03:00 [INF] 
+	Responded in "00:00:00.5730110" with status code 200
+	Response Body: {"games":[{"id":"6a2efa481037e9d7988d6cd3","name":"Chai","key":"chai","description":null,"price":18,"discontinued":0,"unitInStock":39,"publisherId":"6a2efa48bd50fcfc55347d0d"},{"id":"6a2efa481037e9d7988d6cd5","name":"Chef Anton's Cajun Seasoning","key":"chef-antons-cajun-seasoning","description":null,"price":22,"discontinued":0,"unitInStock":53,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6ce2","name":"Sir Rodney's Scones","key":"sir-rodneys-scones","description":null,"price":10,"discontinued":0,"unitInStock":3,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6ced","name":"Schoggi Schokolade","key":"schoggi-schokolade","description":null,"price":43.9,"discontinued":0,"unitInStock":49,"publisherId":"6a2efa48bd50fcfc55347d0a"},{"id":"6a2efa481037e9d7988d6cf2","name":"Geitost","key":"geitost","description":null,"price":2.5,"discontinued":0,"unitInStock":112,"publisherId":"6a2efa48bd50fcfc55347d10"},{"id":"6a2efa481037e9d7988d6cf8","name":"Côte de Blaye","key":"côte-de-blaye","description":null,"price":263.5,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d16"},{"id":"6a2efa481037e9d7988d6cfc","name":"Ipoh Coffee","key":"ipoh-coffee","description":null,"price":46,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d14"},{"id":"6a2efa481037e9d7988d6d04","name":"Valkoinen suklaa","key":"valkoinen-suklaa","description":null,"price":16.25,"discontinued":0,"unitInStock":65,"publisherId":"6a2efa48bd50fcfc55347d19"},{"id":"6a2efa481037e9d7988d6d0e","name":"Sirop d'érable","key":"sirop-dérable","description":null,"price":28.5,"discontinued":0,"unitInStock":113,"publisherId":"6a2efa48bd50fcfc55347d1f"},{"id":"6a2efa481037e9d7988d6d0f","name":"Wimmers gute Semmelknödel","key":"wimmers-gute-semmelknödel","description":null,"price":33.25,"discontinued":0,"unitInStock":22,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6d10","name":"Tarte au sucre","key":"tarte-au-sucre","description":null,"price":49.3,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d1f"},{"id":"6a2efa481037e9d7988d6d11","name":"Vegie-spread","key":"vegie-spread","description":null,"price":43.9,"discontinued":0,"unitInStock":24,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6d17","name":"Gudbrandsdalsost","key":"gudbrandsdalsost","description":null,"price":36,"discontinued":0,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d10"},{"id":"6a2efa481037e9d7988d6d1c","name":"Longlife Tofu","key":"longlife-tofu","description":null,"price":10,"discontinued":0,"unitInStock":4,"publisherId":"6a2efa48bd50fcfc55347d0e"},{"id":"6a2efa481037e9d7988d6cd9","name":"Uncle Bob's Organic Dried Pears","key":"uncle-bobs-organic-dried-pears","description":null,"price":30,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d0f"},{"id":"6a2efa481037e9d7988d6cda","name":"Northwoods Cranberry Sauce","key":"northwoods-cranberry-sauce","description":null,"price":40,"discontinued":0,"unitInStock":6,"publisherId":"6a2efa48bd50fcfc55347d0f"},{"id":"6a2efa481037e9d7988d6cdb","name":"Mishi Kobe Niku","key":"mishi-kobe-niku","description":null,"price":97,"discontinued":1,"unitInStock":29,"publisherId":"6a2efa48bd50fcfc55347d0e"},{"id":"6a2efa481037e9d7988d6cdd","name":"Pavlova","key":"pavlova","description":null,"price":17.45,"discontinued":0,"unitInStock":29,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6ce0","name":"Teatime Chocolate Biscuits","key":"teatime-chocolate-biscuits","description":null,"price":9.2,"discontinued":0,"unitInStock":25,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6ce3","name":"Genen Shouyu","key":"genen-shouyu","description":null,"price":15.5,"discontinued":0,"unitInStock":39,"publisherId":"6a2efa48bd50fcfc55347d04"},{"id":"6a2efa481037e9d7988d6ce5","name":"Gustaf's Knäckebröd","key":"gustafs-knäckebröd","description":null,"price":21,"discontinued":0,"unitInStock":104,"publisherId":"6a2efa48bd50fcfc55347d07"},{"id":"6a2efa481037e9d7988d6ce6","name":"Tofu","key":"tofu","description":null,"price":23.25,"discontinued":0,"unitInStock":35,"publisherId":"6a2efa48bd50fcfc55347d04"},{"id":"6a2efa481037e9d7988d6ce8","name":"Konbu","key":"konbu","description":null,"price":6,"discontinued":0,"unitInStock":24,"publisherId":"6a2efa48bd50fcfc55347d04"},{"id":"6a2efa481037e9d7988d6cee","name":"Rössle Sauerkraut","key":"rössle-sauerkraut","description":null,"price":45.6,"discontinued":1,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6cf1","name":"Mascarpone Fabioli","key":"mascarpone-fabioli","description":null,"price":32,"discontinued":0,"unitInStock":9,"publisherId":"6a2efa48bd50fcfc55347d11"},{"id":"6a2efa481037e9d7988d6cf3","name":"Sasquatch Ale","key":"sasquatch-ale","description":null,"price":14,"discontinued":0,"unitInStock":111,"publisherId":"6a2efa48bd50fcfc55347d13"},{"id":"6a2efa481037e9d7988d6cf5","name":"Inlagd Sill","key":"inlagd-sill","description":null,"price":19,"discontinued":0,"unitInStock":112,"publisherId":"6a2efa48bd50fcfc55347d12"},{"id":"6a2efa481037e9d7988d6cf7","name":"Gravad lax","key":"gravad-lax","description":null,"price":26,"discontinued":0,"unitInStock":11,"publisherId":"6a2efa48bd50fcfc55347d12"},{"id":"6a2efa481037e9d7988d6cfa","name":"Boston Crab Meat","key":"boston-crab-meat","description":null,"price":18.4,"discontinued":0,"unitInStock":123,"publisherId":"6a2efa48bd50fcfc55347d18"},{"id":"6a2efa481037e9d7988d6cfd","name":"Jack's New England Clam Chowder","key":"jacks-new-england-clam-chowder","description":null,"price":9.65,"discontinued":0,"unitInStock":85,"publisherId":"6a2efa48bd50fcfc55347d18"},{"id":"6a2efa481037e9d7988d6cfe","name":"Gula Malacca","key":"gula-malacca","description":null,"price":19.45,"discontinued":0,"unitInStock":27,"publisherId":"6a2efa48bd50fcfc55347d14"},{"id":"6a2efa481037e9d7988d6d02","name":"Chocolade","key":"chocolade","description":null,"price":12.75,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d17"},{"id":"6a2efa481037e9d7988d6d03","name":"Maxilaku","key":"maxilaku","description":null,"price":20,"discontinued":0,"unitInStock":10,"publisherId":"6a2efa48bd50fcfc55347d19"},{"id":"6a2efa481037e9d7988d6d05","name":"Manjimup Dried Apples","key":"manjimup-dried-apples","description":null,"price":53,"discontinued":0,"unitInStock":20,"publisherId":"6a2efa48bd50fcfc55347d1a"},{"id":"6a2efa481037e9d7988d6d06","name":"Filo Mix","key":"filo-mix","description":null,"price":7,"discontinued":0,"unitInStock":38,"publisherId":"6a2efa48bd50fcfc55347d1a"},{"id":"6a2efa481037e9d7988d6d07","name":"Tourtière","key":"tourtière","description":null,"price":7.45,"discontinued":0,"unitInStock":21,"publisherId":"6a2efa48bd50fcfc55347d1b"},{"id":"6a2efa481037e9d7988d6d09","name":"Gnocchi di nonna Alice","key":"gnocchi-di-nonna-alice","description":null,"price":38,"discontinued":0,"unitInStock":21,"publisherId":"6a2efa48bd50fcfc55347d1d"},{"id":"6a2efa481037e9d7988d6d0a","name":"Escargots de Bourgogne","key":"escargots-de-bourgogne","description":null,"price":13.25,"discontinued":0,"unitInStock":62,"publisherId":"6a2efa48bd50fcfc55347d1c"},{"id":"6a2efa481037e9d7988d6d13","name":"Louisiana Fiery Hot Pepper Sauce","key":"louisiana-fiery-hot-pepper-sauce","description":null,"price":21.05,"discontinued":0,"unitInStock":76,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6d1b","name":"Röd Kaviar","key":"röd-kaviar","description":null,"price":15,"discontinued":0,"unitInStock":101,"publisherId":"6a2efa48bd50fcfc55347d12"},{"id":"6a2efa481037e9d7988d6d1e","name":"Lakkalikööri","key":"lakkalikööri","description":null,"price":18,"discontinued":0,"unitInStock":57,"publisherId":"6a2efa48bd50fcfc55347d19"},{"id":"6a2efa481037e9d7988d6cd4","name":"Aniseed Syrup","key":"aniseed-syrup","description":null,"price":10,"discontinued":0,"unitInStock":13,"publisherId":"6a2efa48bd50fcfc55347d0d"},{"id":"6a2efa481037e9d7988d6cd7","name":"Chang","key":"chang","description":null,"price":19,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d0d"},{"id":"6a2efa481037e9d7988d6cd8","name":"Grandma's Boysenberry Spread","key":"grandmas-boysenberry-spread","description":null,"price":25,"discontinued":0,"unitInStock":120,"publisherId":"6a2efa48bd50fcfc55347d0f"},{"id":"6a2efa481037e9d7988d6cdc","name":"Ikura","key":"ikura","description":null,"price":31,"discontinued":0,"unitInStock":31,"publisherId":"6a2efa48bd50fcfc55347d0e"},{"id":"6a2efa481037e9d7988d6cde","name":"Alice Mutton","key":"alice-mutton","description":null,"price":39,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6ce4","name":"Queso Manchego La Pastora","key":"queso-manchego-la-pastora","description":null,"price":38,"discontinued":0,"unitInStock":86,"publisherId":"6a2efa48bd50fcfc55347d03"},{"id":"6a2efa481037e9d7988d6ce7","name":"Queso Cabrales","key":"queso-cabrales","description":null,"price":21,"discontinued":0,"unitInStock":22,"publisherId":"6a2efa48bd50fcfc55347d03"},{"id":"6a2efa481037e9d7988d6ce9","name":"Tunnbröd","key":"tunnbröd","description":null,"price":9,"discontinued":0,"unitInStock":61,"publisherId":"6a2efa48bd50fcfc55347d07"},{"id":"6a2efa481037e9d7988d6cea","name":"Guaraná Fantástica","key":"guaraná-fantástica","description":null,"price":4.5,"discontinued":1,"unitInStock":20,"publisherId":"6a2efa48bd50fcfc55347d08"},{"id":"6a2efa481037e9d7988d6cec","name":"Gumbär Gummibärchen","key":"gumbär-gummibärchen","description":null,"price":31.23,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d0a"},{"id":"6a2efa481037e9d7988d6cf4","name":"Thüringer Rostbratwurst","key":"thüringer-rostbratwurst","description":null,"price":123.79,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6cf6","name":"Steeleye Stout","key":"steeleye-stout","description":null,"price":18,"discontinued":0,"unitInStock":20,"publisherId":"6a2efa48bd50fcfc55347d13"},{"id":"6a2efa481037e9d7988d6d00","name":"Zaanse koeken","key":"zaanse-koeken","description":null,"price":9.5,"discontinued":0,"unitInStock":36,"publisherId":"6a2efa48bd50fcfc55347d17"},{"id":"6a2efa481037e9d7988d6d01","name":"Rogede sild","key":"rogede-sild","description":null,"price":9.5,"discontinued":0,"unitInStock":5,"publisherId":"6a2efa48bd50fcfc55347d15"},{"id":"6a2efa481037e9d7988d6d0d","name":"Camembert Pierrot","key":"camembert-pierrot","description":null,"price":34,"discontinued":0,"unitInStock":19,"publisherId":"6a2efa48bd50fcfc55347d1e"},{"id":"6a2efa481037e9d7988d6d12","name":"Ravioli Angelo","key":"ravioli-angelo","description":null,"price":19.5,"discontinued":0,"unitInStock":36,"publisherId":"6a2efa48bd50fcfc55347d1d"},{"id":"6a2efa481037e9d7988d6d14","name":"Louisiana Hot Spiced Okra","key":"louisiana-hot-spiced-okra","description":null,"price":17,"discontinued":0,"unitInStock":4,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6d18","name":"Outback Lager","key":"outback-lager","description":null,"price":15,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6d1a","name":"Mozzarella di Giovanni","key":"mozzarella-di-giovanni","description":null,"price":34.8,"discontinued":0,"unitInStock":14,"publisherId":"6a2efa48bd50fcfc55347d11"},{"id":"6a2efa481037e9d7988d6d1d","name":"Rhönbräu Klosterbier","key":"rhönbräu-klosterbier","description":null,"price":7.75,"discontinued":0,"unitInStock":125,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6cd6","name":"Chef Anton's Gumbo Mix","key":"chef-antons-gumbo-mix","description":null,"price":21.35,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6cdf","name":"Carnarvon Tigers","key":"carnarvon-tigers","description":null,"price":62.5,"discontinued":0,"unitInStock":42,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6ce1","name":"Sir Rodney's Marmalade","key":"sir-rodneys-marmalade","description":null,"price":81,"discontinued":0,"unitInStock":40,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6ceb","name":"NuNuCa Nuß-Nougat-Creme","key":"nunuca-nuß-nougat-creme","description":null,"price":14,"discontinued":0,"unitInStock":76,"publisherId":"6a2efa48bd50fcfc55347d0a"},{"id":"6a2efa481037e9d7988d6cef","name":"Nord-Ost Matjeshering","key":"nord-ost-matjeshering","description":null,"price":25.89,"discontinued":0,"unitInStock":10,"publisherId":"6a2efa48bd50fcfc55347d0b"},{"id":"6a2efa481037e9d7988d6cf0","name":"Gorgonzola Telino","key":"gorgonzola-telino","description":null,"price":12.5,"discontinued":0,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d11"},{"id":"6a2efa481037e9d7988d6cf9","name":"Chartreuse verte","key":"chartreuse-verte","description":null,"price":18,"discontinued":0,"unitInStock":69,"publisherId":"6a2efa48bd50fcfc55347d16"},{"id":"6a2efa481037e9d7988d6cfb","name":"Singaporean Hokkien Fried Mee","key":"singaporean-hokkien-fried-mee","description":null,"price":14,"discontinued":1,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d14"},{"id":"6a2efa481037e9d7988d6cff","name":"Spegesild","key":"spegesild","description":null,"price":12,"discontinued":0,"unitInStock":95,"publisherId":"6a2efa48bd50fcfc55347d15"},{"id":"6a2efa481037e9d7988d6d08","name":"Perth Pasties","key":"perth-pasties","description":null,"price":32.8,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d1a"},{"id":"6a2efa481037e9d7988d6d0b","name":"Pâté chinois","key":"pâté-chinois","description":null,"price":24,"discontinued":0,"unitInStock":115,"publisherId":"6a2efa48bd50fcfc55347d1b"},{"id":"6a2efa481037e9d7988d6d0c","name":"Raclette Courdavault","key":"raclette-courdavault","description":null,"price":55,"discontinued":0,"unitInStock":79,"publisherId":"6a2efa48bd50fcfc55347d1e"},{"id":"6a2efa481037e9d7988d6d15","name":"Laughing Lumberjack Lager","key":"laughing-lumberjack-lager","description":null,"price":14,"discontinued":0,"unitInStock":52,"publisherId":"6a2efa48bd50fcfc55347d13"},{"id":"6a2efa481037e9d7988d6d16","name":"Scottish Longbreads","key":"scottish-longbreads","description":null,"price":12.5,"discontinued":0,"unitInStock":6,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6d19","name":"Flotemysost","key":"flotemysost","description":null,"price":21.5,"discontinued":0,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d10"},{"id":"6a2efa481037e9d7988d6d1f","name":"Original Frankfurter grüne Soße","key":"original-frankfurter-grüne-soße","description":null,"price":13,"discontinued":0,"unitInStock":32,"publisherId":"6a2efa48bd50fcfc55347d09"}],"totalPages":1,"currentPage":1}
+2026-09-03 20:43:58.049 +03:00 [INF] 
+	Request type: PUT
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: {
+  "game": {
+      "id": "6a2efa481037e9d7988d6cd3",
+      "name": "Chai",
+      "key": "chai",
+      "description": "brand new desctription",
+      "price": 18,
+      "discount": 0,
+      "unitInStock": 39
+  },
+  "publisher": "6a2efa48bd50fcfc55347d0d"
+}
+2026-09-03 20:43:58.934 +03:00 [INF] 
+	Responded in "00:00:00.8854258" with status code 204
+	Response Body: 
+2026-09-03 20:45:31.185 +03:00 [INF] 
+	Request type: PUT
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: {
+  "game": {
+      "id": "6a2efa481037e9d7988d6cd3",
+      "name": "Chai",
+      "key": "chai",
+      "description": "brand new desctription",
+      "price": 18,
+      "discount": 0,
+      "unitInStock": 38
+  },
+  "publisher": "6a2efa48bd50fcfc55347d0d"
+}
+2026-09-03 20:45:31.269 +03:00 [INF] 
+	Responded in "00:00:00.0837655" with status code 409
+	Response Body: {"title":"Game.KeyAlreadyTaken","status":409,"detail":"The specified key is already taken"}
+2026-09-03 20:45:45.748 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: 
+2026-09-03 20:45:45.959 +03:00 [INF] 
+	Responded in "00:00:00.2109096" with status code 200
+	Response Body: {"games":[{"id":"085fce12-fdb6-4f1e-821e-122a7f279017","name":"Chai","key":"chai","description":"brand new desctription","price":18,"discontinued":0,"unitInStock":39,"publisherId":"519ae1e3-9c73-4d79-ad3e-78e00501f46d"},{"id":"6a2efa481037e9d7988d6cd5","name":"Chef Anton's Cajun Seasoning","key":"chef-antons-cajun-seasoning","description":null,"price":22,"discontinued":0,"unitInStock":53,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6ce2","name":"Sir Rodney's Scones","key":"sir-rodneys-scones","description":null,"price":10,"discontinued":0,"unitInStock":3,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6ced","name":"Schoggi Schokolade","key":"schoggi-schokolade","description":null,"price":43.9,"discontinued":0,"unitInStock":49,"publisherId":"6a2efa48bd50fcfc55347d0a"},{"id":"6a2efa481037e9d7988d6cf2","name":"Geitost","key":"geitost","description":null,"price":2.5,"discontinued":0,"unitInStock":112,"publisherId":"6a2efa48bd50fcfc55347d10"},{"id":"6a2efa481037e9d7988d6cf8","name":"Côte de Blaye","key":"côte-de-blaye","description":null,"price":263.5,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d16"},{"id":"6a2efa481037e9d7988d6cfc","name":"Ipoh Coffee","key":"ipoh-coffee","description":null,"price":46,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d14"},{"id":"6a2efa481037e9d7988d6d04","name":"Valkoinen suklaa","key":"valkoinen-suklaa","description":null,"price":16.25,"discontinued":0,"unitInStock":65,"publisherId":"6a2efa48bd50fcfc55347d19"},{"id":"6a2efa481037e9d7988d6d0e","name":"Sirop d'érable","key":"sirop-dérable","description":null,"price":28.5,"discontinued":0,"unitInStock":113,"publisherId":"6a2efa48bd50fcfc55347d1f"},{"id":"6a2efa481037e9d7988d6d0f","name":"Wimmers gute Semmelknödel","key":"wimmers-gute-semmelknödel","description":null,"price":33.25,"discontinued":0,"unitInStock":22,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6d10","name":"Tarte au sucre","key":"tarte-au-sucre","description":null,"price":49.3,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d1f"},{"id":"6a2efa481037e9d7988d6d11","name":"Vegie-spread","key":"vegie-spread","description":null,"price":43.9,"discontinued":0,"unitInStock":24,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6d17","name":"Gudbrandsdalsost","key":"gudbrandsdalsost","description":null,"price":36,"discontinued":0,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d10"},{"id":"6a2efa481037e9d7988d6d1c","name":"Longlife Tofu","key":"longlife-tofu","description":null,"price":10,"discontinued":0,"unitInStock":4,"publisherId":"6a2efa48bd50fcfc55347d0e"},{"id":"6a2efa481037e9d7988d6cd9","name":"Uncle Bob's Organic Dried Pears","key":"uncle-bobs-organic-dried-pears","description":null,"price":30,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d0f"},{"id":"6a2efa481037e9d7988d6cda","name":"Northwoods Cranberry Sauce","key":"northwoods-cranberry-sauce","description":null,"price":40,"discontinued":0,"unitInStock":6,"publisherId":"6a2efa48bd50fcfc55347d0f"},{"id":"6a2efa481037e9d7988d6cdb","name":"Mishi Kobe Niku","key":"mishi-kobe-niku","description":null,"price":97,"discontinued":1,"unitInStock":29,"publisherId":"6a2efa48bd50fcfc55347d0e"},{"id":"6a2efa481037e9d7988d6cdd","name":"Pavlova","key":"pavlova","description":null,"price":17.45,"discontinued":0,"unitInStock":29,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6ce0","name":"Teatime Chocolate Biscuits","key":"teatime-chocolate-biscuits","description":null,"price":9.2,"discontinued":0,"unitInStock":25,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6ce3","name":"Genen Shouyu","key":"genen-shouyu","description":null,"price":15.5,"discontinued":0,"unitInStock":39,"publisherId":"6a2efa48bd50fcfc55347d04"},{"id":"6a2efa481037e9d7988d6ce5","name":"Gustaf's Knäckebröd","key":"gustafs-knäckebröd","description":null,"price":21,"discontinued":0,"unitInStock":104,"publisherId":"6a2efa48bd50fcfc55347d07"},{"id":"6a2efa481037e9d7988d6ce6","name":"Tofu","key":"tofu","description":null,"price":23.25,"discontinued":0,"unitInStock":35,"publisherId":"6a2efa48bd50fcfc55347d04"},{"id":"6a2efa481037e9d7988d6ce8","name":"Konbu","key":"konbu","description":null,"price":6,"discontinued":0,"unitInStock":24,"publisherId":"6a2efa48bd50fcfc55347d04"},{"id":"6a2efa481037e9d7988d6cee","name":"Rössle Sauerkraut","key":"rössle-sauerkraut","description":null,"price":45.6,"discontinued":1,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6cf1","name":"Mascarpone Fabioli","key":"mascarpone-fabioli","description":null,"price":32,"discontinued":0,"unitInStock":9,"publisherId":"6a2efa48bd50fcfc55347d11"},{"id":"6a2efa481037e9d7988d6cf3","name":"Sasquatch Ale","key":"sasquatch-ale","description":null,"price":14,"discontinued":0,"unitInStock":111,"publisherId":"6a2efa48bd50fcfc55347d13"},{"id":"6a2efa481037e9d7988d6cf5","name":"Inlagd Sill","key":"inlagd-sill","description":null,"price":19,"discontinued":0,"unitInStock":112,"publisherId":"6a2efa48bd50fcfc55347d12"},{"id":"6a2efa481037e9d7988d6cf7","name":"Gravad lax","key":"gravad-lax","description":null,"price":26,"discontinued":0,"unitInStock":11,"publisherId":"6a2efa48bd50fcfc55347d12"},{"id":"6a2efa481037e9d7988d6cfa","name":"Boston Crab Meat","key":"boston-crab-meat","description":null,"price":18.4,"discontinued":0,"unitInStock":123,"publisherId":"6a2efa48bd50fcfc55347d18"},{"id":"6a2efa481037e9d7988d6cfd","name":"Jack's New England Clam Chowder","key":"jacks-new-england-clam-chowder","description":null,"price":9.65,"discontinued":0,"unitInStock":85,"publisherId":"6a2efa48bd50fcfc55347d18"},{"id":"6a2efa481037e9d7988d6cfe","name":"Gula Malacca","key":"gula-malacca","description":null,"price":19.45,"discontinued":0,"unitInStock":27,"publisherId":"6a2efa48bd50fcfc55347d14"},{"id":"6a2efa481037e9d7988d6d02","name":"Chocolade","key":"chocolade","description":null,"price":12.75,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d17"},{"id":"6a2efa481037e9d7988d6d03","name":"Maxilaku","key":"maxilaku","description":null,"price":20,"discontinued":0,"unitInStock":10,"publisherId":"6a2efa48bd50fcfc55347d19"},{"id":"6a2efa481037e9d7988d6d05","name":"Manjimup Dried Apples","key":"manjimup-dried-apples","description":null,"price":53,"discontinued":0,"unitInStock":20,"publisherId":"6a2efa48bd50fcfc55347d1a"},{"id":"6a2efa481037e9d7988d6d06","name":"Filo Mix","key":"filo-mix","description":null,"price":7,"discontinued":0,"unitInStock":38,"publisherId":"6a2efa48bd50fcfc55347d1a"},{"id":"6a2efa481037e9d7988d6d07","name":"Tourtière","key":"tourtière","description":null,"price":7.45,"discontinued":0,"unitInStock":21,"publisherId":"6a2efa48bd50fcfc55347d1b"},{"id":"6a2efa481037e9d7988d6d09","name":"Gnocchi di nonna Alice","key":"gnocchi-di-nonna-alice","description":null,"price":38,"discontinued":0,"unitInStock":21,"publisherId":"6a2efa48bd50fcfc55347d1d"},{"id":"6a2efa481037e9d7988d6d0a","name":"Escargots de Bourgogne","key":"escargots-de-bourgogne","description":null,"price":13.25,"discontinued":0,"unitInStock":62,"publisherId":"6a2efa48bd50fcfc55347d1c"},{"id":"6a2efa481037e9d7988d6d13","name":"Louisiana Fiery Hot Pepper Sauce","key":"louisiana-fiery-hot-pepper-sauce","description":null,"price":21.05,"discontinued":0,"unitInStock":76,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6d1b","name":"Röd Kaviar","key":"röd-kaviar","description":null,"price":15,"discontinued":0,"unitInStock":101,"publisherId":"6a2efa48bd50fcfc55347d12"},{"id":"6a2efa481037e9d7988d6d1e","name":"Lakkalikööri","key":"lakkalikööri","description":null,"price":18,"discontinued":0,"unitInStock":57,"publisherId":"6a2efa48bd50fcfc55347d19"},{"id":"6a2efa481037e9d7988d6cd4","name":"Aniseed Syrup","key":"aniseed-syrup","description":null,"price":10,"discontinued":0,"unitInStock":13,"publisherId":"6a2efa48bd50fcfc55347d0d"},{"id":"6a2efa481037e9d7988d6cd7","name":"Chang","key":"chang","description":null,"price":19,"discontinued":0,"unitInStock":17,"publisherId":"6a2efa48bd50fcfc55347d0d"},{"id":"6a2efa481037e9d7988d6cd8","name":"Grandma's Boysenberry Spread","key":"grandmas-boysenberry-spread","description":null,"price":25,"discontinued":0,"unitInStock":120,"publisherId":"6a2efa48bd50fcfc55347d0f"},{"id":"6a2efa481037e9d7988d6cdc","name":"Ikura","key":"ikura","description":null,"price":31,"discontinued":0,"unitInStock":31,"publisherId":"6a2efa48bd50fcfc55347d0e"},{"id":"6a2efa481037e9d7988d6cde","name":"Alice Mutton","key":"alice-mutton","description":null,"price":39,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6ce4","name":"Queso Manchego La Pastora","key":"queso-manchego-la-pastora","description":null,"price":38,"discontinued":0,"unitInStock":86,"publisherId":"6a2efa48bd50fcfc55347d03"},{"id":"6a2efa481037e9d7988d6ce7","name":"Queso Cabrales","key":"queso-cabrales","description":null,"price":21,"discontinued":0,"unitInStock":22,"publisherId":"6a2efa48bd50fcfc55347d03"},{"id":"6a2efa481037e9d7988d6ce9","name":"Tunnbröd","key":"tunnbröd","description":null,"price":9,"discontinued":0,"unitInStock":61,"publisherId":"6a2efa48bd50fcfc55347d07"},{"id":"6a2efa481037e9d7988d6cea","name":"Guaraná Fantástica","key":"guaraná-fantástica","description":null,"price":4.5,"discontinued":1,"unitInStock":20,"publisherId":"6a2efa48bd50fcfc55347d08"},{"id":"6a2efa481037e9d7988d6cec","name":"Gumbär Gummibärchen","key":"gumbär-gummibärchen","description":null,"price":31.23,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d0a"},{"id":"6a2efa481037e9d7988d6cf4","name":"Thüringer Rostbratwurst","key":"thüringer-rostbratwurst","description":null,"price":123.79,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6cf6","name":"Steeleye Stout","key":"steeleye-stout","description":null,"price":18,"discontinued":0,"unitInStock":20,"publisherId":"6a2efa48bd50fcfc55347d13"},{"id":"6a2efa481037e9d7988d6d00","name":"Zaanse koeken","key":"zaanse-koeken","description":null,"price":9.5,"discontinued":0,"unitInStock":36,"publisherId":"6a2efa48bd50fcfc55347d17"},{"id":"6a2efa481037e9d7988d6d01","name":"Rogede sild","key":"rogede-sild","description":null,"price":9.5,"discontinued":0,"unitInStock":5,"publisherId":"6a2efa48bd50fcfc55347d15"},{"id":"6a2efa481037e9d7988d6d0d","name":"Camembert Pierrot","key":"camembert-pierrot","description":null,"price":34,"discontinued":0,"unitInStock":19,"publisherId":"6a2efa48bd50fcfc55347d1e"},{"id":"6a2efa481037e9d7988d6d12","name":"Ravioli Angelo","key":"ravioli-angelo","description":null,"price":19.5,"discontinued":0,"unitInStock":36,"publisherId":"6a2efa48bd50fcfc55347d1d"},{"id":"6a2efa481037e9d7988d6d14","name":"Louisiana Hot Spiced Okra","key":"louisiana-hot-spiced-okra","description":null,"price":17,"discontinued":0,"unitInStock":4,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6d18","name":"Outback Lager","key":"outback-lager","description":null,"price":15,"discontinued":0,"unitInStock":15,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6d1a","name":"Mozzarella di Giovanni","key":"mozzarella-di-giovanni","description":null,"price":34.8,"discontinued":0,"unitInStock":14,"publisherId":"6a2efa48bd50fcfc55347d11"},{"id":"6a2efa481037e9d7988d6d1d","name":"Rhönbräu Klosterbier","key":"rhönbräu-klosterbier","description":null,"price":7.75,"discontinued":0,"unitInStock":125,"publisherId":"6a2efa48bd50fcfc55347d09"},{"id":"6a2efa481037e9d7988d6cd6","name":"Chef Anton's Gumbo Mix","key":"chef-antons-gumbo-mix","description":null,"price":21.35,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d0c"},{"id":"6a2efa481037e9d7988d6cdf","name":"Carnarvon Tigers","key":"carnarvon-tigers","description":null,"price":62.5,"discontinued":0,"unitInStock":42,"publisherId":"6a2efa48bd50fcfc55347d05"},{"id":"6a2efa481037e9d7988d6ce1","name":"Sir Rodney's Marmalade","key":"sir-rodneys-marmalade","description":null,"price":81,"discontinued":0,"unitInStock":40,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6ceb","name":"NuNuCa Nuß-Nougat-Creme","key":"nunuca-nuß-nougat-creme","description":null,"price":14,"discontinued":0,"unitInStock":76,"publisherId":"6a2efa48bd50fcfc55347d0a"},{"id":"6a2efa481037e9d7988d6cef","name":"Nord-Ost Matjeshering","key":"nord-ost-matjeshering","description":null,"price":25.89,"discontinued":0,"unitInStock":10,"publisherId":"6a2efa48bd50fcfc55347d0b"},{"id":"6a2efa481037e9d7988d6cf0","name":"Gorgonzola Telino","key":"gorgonzola-telino","description":null,"price":12.5,"discontinued":0,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d11"},{"id":"6a2efa481037e9d7988d6cf9","name":"Chartreuse verte","key":"chartreuse-verte","description":null,"price":18,"discontinued":0,"unitInStock":69,"publisherId":"6a2efa48bd50fcfc55347d16"},{"id":"6a2efa481037e9d7988d6cfb","name":"Singaporean Hokkien Fried Mee","key":"singaporean-hokkien-fried-mee","description":null,"price":14,"discontinued":1,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d14"},{"id":"6a2efa481037e9d7988d6cff","name":"Spegesild","key":"spegesild","description":null,"price":12,"discontinued":0,"unitInStock":95,"publisherId":"6a2efa48bd50fcfc55347d15"},{"id":"6a2efa481037e9d7988d6d08","name":"Perth Pasties","key":"perth-pasties","description":null,"price":32.8,"discontinued":1,"unitInStock":0,"publisherId":"6a2efa48bd50fcfc55347d1a"},{"id":"6a2efa481037e9d7988d6d0b","name":"Pâté chinois","key":"pâté-chinois","description":null,"price":24,"discontinued":0,"unitInStock":115,"publisherId":"6a2efa48bd50fcfc55347d1b"},{"id":"6a2efa481037e9d7988d6d0c","name":"Raclette Courdavault","key":"raclette-courdavault","description":null,"price":55,"discontinued":0,"unitInStock":79,"publisherId":"6a2efa48bd50fcfc55347d1e"},{"id":"6a2efa481037e9d7988d6d15","name":"Laughing Lumberjack Lager","key":"laughing-lumberjack-lager","description":null,"price":14,"discontinued":0,"unitInStock":52,"publisherId":"6a2efa48bd50fcfc55347d13"},{"id":"6a2efa481037e9d7988d6d16","name":"Scottish Longbreads","key":"scottish-longbreads","description":null,"price":12.5,"discontinued":0,"unitInStock":6,"publisherId":"6a2efa48bd50fcfc55347d06"},{"id":"6a2efa481037e9d7988d6d19","name":"Flotemysost","key":"flotemysost","description":null,"price":21.5,"discontinued":0,"unitInStock":26,"publisherId":"6a2efa48bd50fcfc55347d10"},{"id":"6a2efa481037e9d7988d6d1f","name":"Original Frankfurter grüne Soße","key":"original-frankfurter-grüne-soße","description":null,"price":13,"discontinued":0,"unitInStock":32,"publisherId":"6a2efa48bd50fcfc55347d09"}],"totalPages":1,"currentPage":1}
+2026-09-03 20:46:03.388 +03:00 [INF] 
+	Request type: PUT
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: {
+  "game": {
+      "id": "085fce12-fdb6-4f1e-821e-122a7f279017",
+      "name": "Chai",
+      "key": "chai",
+      "description": "brand new desctription",
+      "price": 18,
+      "discount": 0,
+      "unitInStock": 38
+  },
+  "publisher": "519ae1e3-9c73-4d79-ad3e-78e00501f46d"
+}
+2026-09-03 20:46:03.467 +03:00 [INF] 
+	Responded in "00:00:00.0795811" with status code 409
+	Response Body: {"title":"Game.KeyAlreadyTaken","status":409,"detail":"The specified key is already taken"}
+2026-09-03 20:47:53.752 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/
+	User IP address: ::1
+	Request body: 
+2026-09-03 20:47:53.934 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-03 20:47:54.493 +03:00 [INF] 
+	Responded in "00:00:00.7479089" with status code 404
+	Response Body: 
+2026-09-03 20:47:57.188 +03:00 [INF] 
+	Request type: PUT
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: {
+  "game": {
+      "id": "085fce12-fdb6-4f1e-821e-122a7f279017",
+      "name": "Chai",
+      "key": "chai",
+      "description": "brand new desctription",
+      "price": 18,
+      "discount": 0,
+      "unitInStock": 38
+  },
+  "publisher": "519ae1e3-9c73-4d79-ad3e-78e00501f46d"
+}
+2026-09-03 20:53:51.060 +03:00 [INF] 
+	Request type: GET
+	Url: https://localhost:7153/
+	User IP address: ::1
+	Request body: 
+2026-09-03 20:53:51.147 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-03 20:53:51.570 +03:00 [INF] 
+	Responded in "00:00:00.5142451" with status code 404
+	Response Body: 
+2026-09-03 20:53:54.997 +03:00 [INF] 
+	Request type: PUT
+	Url: https://localhost:7153/api/Games
+	User IP address: ::1
+	Request body: {
+  "game": {
+      "id": "085fce12-fdb6-4f1e-821e-122a7f279017",
+      "name": "Chai",
+      "key": "chai",
+      "description": "brand new desctription",
+      "price": 18,
+      "discount": 0,
+      "unitInStock": 38
+  },
+  "publisher": "519ae1e3-9c73-4d79-ad3e-78e00501f46d"
+}
+2026-09-03 20:53:55.424 +03:00 [INF] 
+	Responded in "00:00:00.4277517" with status code 204
+	Response Body: 

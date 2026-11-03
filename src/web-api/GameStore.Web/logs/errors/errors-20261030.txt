@@ -1,0 +1,1028 @@
+2026-10-30 14:46:40.490 +02:00 [ERR] Critical error in OutboxProcessor
+System.InvalidOperationException: No service for type 'GameStore.DAL.Mongo.Repositories.Logger.ILogRepository' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at GameStore.DAL.BackgroundServices.OutboxProcessorBackgroundService.ProcessOutboxMessagesAsync(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\BackgroundServices\OutboxProcessorBackgroundService.cs:line 44
+   at GameStore.DAL.BackgroundServices.OutboxProcessorBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\BackgroundServices\OutboxProcessorBackgroundService.cs:line 26
+2026-10-30 14:46:45.847 +02:00 [ERR] Critical error in OutboxProcessor
+System.InvalidOperationException: No service for type 'GameStore.DAL.Mongo.Repositories.Logger.ILogRepository' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at GameStore.DAL.BackgroundServices.OutboxProcessorBackgroundService.ProcessOutboxMessagesAsync(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\BackgroundServices\OutboxProcessorBackgroundService.cs:line 44
+   at GameStore.DAL.BackgroundServices.OutboxProcessorBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\BackgroundServices\OutboxProcessorBackgroundService.cs:line 26
+2026-10-30 14:46:51.057 +02:00 [ERR] Critical error in OutboxProcessor
+System.InvalidOperationException: No service for type 'GameStore.DAL.Mongo.Repositories.Logger.ILogRepository' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at GameStore.DAL.BackgroundServices.OutboxProcessorBackgroundService.ProcessOutboxMessagesAsync(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\BackgroundServices\OutboxProcessorBackgroundService.cs:line 44
+   at GameStore.DAL.BackgroundServices.OutboxProcessorBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\BackgroundServices\OutboxProcessorBackgroundService.cs:line 26
+2026-10-30 14:46:56.123 +02:00 [ERR] Critical error in OutboxProcessor
+System.InvalidOperationException: No service for type 'GameStore.DAL.Mongo.Repositories.Logger.ILogRepository' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at GameStore.DAL.BackgroundServices.OutboxProcessorBackgroundService.ProcessOutboxMessagesAsync(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\BackgroundServices\OutboxProcessorBackgroundService.cs:line 44
+   at GameStore.DAL.BackgroundServices.OutboxProcessorBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\BackgroundServices\OutboxProcessorBackgroundService.cs:line 26
+2026-10-30 14:47:01.258 +02:00 [ERR] Critical error in OutboxProcessor
+System.InvalidOperationException: No service for type 'GameStore.DAL.Mongo.Repositories.Logger.ILogRepository' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at GameStore.DAL.BackgroundServices.OutboxProcessorBackgroundService.ProcessOutboxMessagesAsync(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\BackgroundServices\OutboxProcessorBackgroundService.cs:line 44
+   at GameStore.DAL.BackgroundServices.OutboxProcessorBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\BackgroundServices\OutboxProcessorBackgroundService.cs:line 26
+2026-10-30 14:47:03.320 +02:00 [ERR] An error occurred using the connection to database 'GameStoreDb' on server 'localhost,1433'.
+2026-10-30 14:47:03.369 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'GameStore.DAL.Data.GameStoreDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.)
+ ---> System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.)
+ ---> System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+2026-10-30 14:47:04.117 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.)
+ ---> System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at GameStore.DAL.Repositories.GameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL\Repositories\GameRepository.cs:line 109
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 95
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 292
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+2026-10-30 14:47:04.164 +02:00 [ERR] Global exception handler caught an error:
+	Exception type: Microsoft.Data.SqlClient.SqlException
+	Source: Core Microsoft SqlClient Data Provider
+	Exception message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.)
+	Inner exception: System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it.
+	Stack Trace: Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.)
+ ---> System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at GameStore.DAL.Repositories.GameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL\Repositories\GameRepository.cs:line 109
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 95
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 292
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+	Exception details:    at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at GameStore.DAL.Repositories.GameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL\Repositories\GameRepository.cs:line 109
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 95
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 292
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2026-10-30 14:47:04.518 +02:00 [ERR] An error occurred using the connection to database 'GameStoreDb' on server 'localhost,1433'.
+2026-10-30 14:47:04.526 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'GameStore.DAL.Data.GameStoreDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.)
+ ---> System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.)
+ ---> System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+2026-10-30 14:47:05.483 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.)
+ ---> System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at GameStore.DAL.Repositories.GameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL\Repositories\GameRepository.cs:line 109
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 95
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 292
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+2026-10-30 14:47:05.532 +02:00 [ERR] Global exception handler caught an error:
+	Exception type: Microsoft.Data.SqlClient.SqlException
+	Source: Core Microsoft SqlClient Data Provider
+	Exception message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.)
+	Inner exception: System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it.
+	Stack Trace: Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.)
+ ---> System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at GameStore.DAL.Repositories.GameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL\Repositories\GameRepository.cs:line 109
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 95
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 292
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+	Exception details:    at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at GameStore.DAL.Repositories.GameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL\Repositories\GameRepository.cs:line 109
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 95
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 292
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2026-10-30 14:47:06.456 +02:00 [ERR] Critical error in OutboxProcessor
+System.InvalidOperationException: No service for type 'GameStore.DAL.Mongo.Repositories.Logger.ILogRepository' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at GameStore.DAL.BackgroundServices.OutboxProcessorBackgroundService.ProcessOutboxMessagesAsync(CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\BackgroundServices\OutboxProcessorBackgroundService.cs:line 44
+   at GameStore.DAL.BackgroundServices.OutboxProcessorBackgroundService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\BackgroundServices\OutboxProcessorBackgroundService.cs:line 26
+2026-10-30 16:09:31.714 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: A timeout occurred after 30004ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-10-30 16:09:31.793 +02:00 [ERR] Global exception handler caught an error:
+	Exception type: System.TimeoutException
+	Source: MongoDB.Driver
+	Exception message: A timeout occurred after 30004ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+	Inner exception: null
+	Stack Trace: System.TimeoutException: A timeout occurred after 30004ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+	Exception details:    at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2026-10-30 16:09:32.080 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at GameStore.Web.Infrastructure.GlobalExceptionHandler.TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\GlobalExceptionHandler.cs:line 33
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2026-10-30 16:09:32.399 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: A timeout occurred after 30004ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at GameStore.Web.Infrastructure.CustomMiddleware.HttpLoggerMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\HttpLoggerMiddleware.cs:line 38
+   at GameStore.Web.Infrastructure.CustomMiddleware.HttpLoggerMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\HttpLoggerMiddleware.cs:line 56
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-10-30 16:09:58.054 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: A timeout occurred after 30001ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.<>c__DisplayClass11_0.<<InvokeAwaited>g__ExecuteResponseAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.OutputCaching.WorkDispatcher`2.ScheduleAsync(TKey key, Func`2 valueFactory)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.InvokeAwaited(HttpContext httpContext, IReadOnlyList`1 policies)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-10-30 16:09:58.065 +02:00 [ERR] Global exception handler caught an error:
+	Exception type: System.TimeoutException
+	Source: MongoDB.Driver
+	Exception message: A timeout occurred after 30001ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+	Inner exception: null
+	Stack Trace: System.TimeoutException: A timeout occurred after 30001ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.<>c__DisplayClass11_0.<<InvokeAwaited>g__ExecuteResponseAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.OutputCaching.WorkDispatcher`2.ScheduleAsync(TKey key, Func`2 valueFactory)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.InvokeAwaited(HttpContext httpContext, IReadOnlyList`1 policies)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+	Exception details:    at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.<>c__DisplayClass11_0.<<InvokeAwaited>g__ExecuteResponseAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.OutputCaching.WorkDispatcher`2.ScheduleAsync(TKey key, Func`2 valueFactory)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.InvokeAwaited(HttpContext httpContext, IReadOnlyList`1 policies)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2026-10-30 17:18:16.345 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: A timeout occurred after 30014ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-10-30 17:18:16.433 +02:00 [ERR] Global exception handler caught an error:
+	Exception type: System.TimeoutException
+	Source: MongoDB.Driver
+	Exception message: A timeout occurred after 30014ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+	Inner exception: null
+	Stack Trace: System.TimeoutException: A timeout occurred after 30014ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+	Exception details:    at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2026-10-30 17:18:16.724 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at GameStore.Web.Infrastructure.GlobalExceptionHandler.TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\GlobalExceptionHandler.cs:line 33
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2026-10-30 17:18:17.167 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: A timeout occurred after 30014ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at GameStore.Web.Infrastructure.CustomMiddleware.HttpLoggerMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\HttpLoggerMiddleware.cs:line 38
+   at GameStore.Web.Infrastructure.CustomMiddleware.HttpLoggerMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\HttpLoggerMiddleware.cs:line 56
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-10-30 17:18:29.566 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: A timeout occurred after 30012ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.<>c__DisplayClass11_0.<<InvokeAwaited>g__ExecuteResponseAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.OutputCaching.WorkDispatcher`2.ScheduleAsync(TKey key, Func`2 valueFactory)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.InvokeAwaited(HttpContext httpContext, IReadOnlyList`1 policies)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-10-30 17:18:29.583 +02:00 [ERR] Global exception handler caught an error:
+	Exception type: System.TimeoutException
+	Source: MongoDB.Driver
+	Exception message: A timeout occurred after 30012ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+	Inner exception: null
+	Stack Trace: System.TimeoutException: A timeout occurred after 30012ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.<>c__DisplayClass11_0.<<InvokeAwaited>g__ExecuteResponseAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.OutputCaching.WorkDispatcher`2.ScheduleAsync(TKey key, Func`2 valueFactory)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.InvokeAwaited(HttpContext httpContext, IReadOnlyList`1 policies)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+	Exception details:    at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.<>c__DisplayClass11_0.<<InvokeAwaited>g__ExecuteResponseAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.OutputCaching.WorkDispatcher`2.ScheduleAsync(TKey key, Func`2 valueFactory)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.InvokeAwaited(HttpContext httpContext, IReadOnlyList`1 policies)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2026-10-30 17:21:26.542 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: A timeout occurred after 30019ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-10-30 17:21:26.572 +02:00 [ERR] Global exception handler caught an error:
+	Exception type: System.TimeoutException
+	Source: MongoDB.Driver
+	Exception message: A timeout occurred after 30019ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+	Inner exception: null
+	Stack Trace: System.TimeoutException: A timeout occurred after 30019ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+	Exception details:    at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2026-10-30 17:21:26.840 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at GameStore.Web.Infrastructure.GlobalExceptionHandler.TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\GlobalExceptionHandler.cs:line 33
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2026-10-30 17:21:27.168 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: A timeout occurred after 30019ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at GameStore.Web.Infrastructure.CustomMiddleware.HttpLoggerMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\HttpLoggerMiddleware.cs:line 38
+   at GameStore.Web.Infrastructure.CustomMiddleware.HttpLoggerMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\HttpLoggerMiddleware.cs:line 56
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-10-30 17:21:48.833 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: A timeout occurred after 30003ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-10-30 17:21:48.849 +02:00 [ERR] Global exception handler caught an error:
+	Exception type: System.TimeoutException
+	Source: MongoDB.Driver
+	Exception message: A timeout occurred after 30003ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+	Inner exception: null
+	Stack Trace: System.TimeoutException: A timeout occurred after 30003ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+	Exception details:    at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2026-10-30 17:28:09.069 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: A timeout occurred after 30013ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-10-30 17:28:09.214 +02:00 [ERR] Global exception handler caught an error:
+	Exception type: System.TimeoutException
+	Source: MongoDB.Driver
+	Exception message: A timeout occurred after 30013ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+	Inner exception: null
+	Stack Trace: System.TimeoutException: A timeout occurred after 30013ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2026-10-30 17:28:09.523 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at GameStore.Web.Infrastructure.GlobalExceptionHandler.TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\GlobalExceptionHandler.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2026-10-30 17:28:09.937 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: A timeout occurred after 30013ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at GameStore.Web.Infrastructure.CustomMiddleware.HttpLoggerMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\HttpLoggerMiddleware.cs:line 38
+   at GameStore.Web.Infrastructure.CustomMiddleware.HttpLoggerMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\HttpLoggerMiddleware.cs:line 56
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-10-30 17:28:26.018 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: A timeout occurred after 30004ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.<>c__DisplayClass11_0.<<InvokeAwaited>g__ExecuteResponseAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.OutputCaching.WorkDispatcher`2.ScheduleAsync(TKey key, Func`2 valueFactory)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.InvokeAwaited(HttpContext httpContext, IReadOnlyList`1 policies)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-10-30 17:28:26.033 +02:00 [ERR] Global exception handler caught an error:
+	Exception type: System.TimeoutException
+	Source: MongoDB.Driver
+	Exception message: A timeout occurred after 30004ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+	Inner exception: null
+	Stack Trace: System.TimeoutException: A timeout occurred after 30004ms selecting a server using CompositeServerSelector{ Selectors = ReadPreferenceServerSelector{ ReadPreference = { Mode : Primary } }, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 }, OperationsCountServerSelector }. Client view of cluster state is { ClusterId : "1", Type : "Unknown", State : "Disconnected", Servers : [] }.
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](OperationContext operationContext, IRetryableReadOperation`1 operation, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, RetryableReadContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(OperationContext operationContext, IReadBinding binding)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](OperationContext operationContext, IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, Boolean allowChannelPinning)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference explicitReadPreference, Nullable`1 timeout, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at GameStore.DAL.Mongo.Repositories.MongoGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.DAL.Mongo\Repositories\MongoGameRepository.cs:line 56
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetByFilterAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 97
+   at GameStore.Infrastructure.DataAccess.CompositeRepositories.CompositeGameRepository.GetCountAsync(GameFilterDetails filter, GamePermissionDetails permissions, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Infrastructure\DataAccess\CompositeRepositories\CompositeGameRepository.cs:line 129
+   at GameStore.Core.Services.GameService.GetGameCount(GameFilterDetails filter, CancellationToken token) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Core\Services\GameService.cs:line 293
+   at GameStore.Web.Infrastructure.CustomMiddleware.TotalGamesHeaderMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\TarasSerhiienko\source\repos\game-store-v2-with-branches\GameStore.Web\Infrastructure\CustomMiddleware\TotalGamesHeaderMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.<>c__DisplayClass11_0.<<InvokeAwaited>g__ExecuteResponseAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.OutputCaching.WorkDispatcher`2.ScheduleAsync(TKey key, Func`2 valueFactory)
+   at Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware.InvokeAwaited(HttpContext httpContext, IReadOnlyList`1 policies)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+

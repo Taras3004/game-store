@@ -1,0 +1,14 @@
+<div class="flex flex-col w-full">
+    @for (cartItem of items; track cartItem.Name) {
+        <cart-item
+            [item]="cartItem"
+            (remove)="onRemove($event)"
+            (increase)="onIncrease($event)"
+            (decrease)="onDecrease($event)"
+        >
+        </cart-item>
+        <hr class="text-gray-300 mb-4" />
+    } @empty {
+        <div class="py-12 text-center text-slate-500">Your cart is currently empty.</div>
+    }
+</div>

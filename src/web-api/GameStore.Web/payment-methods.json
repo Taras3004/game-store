@@ -1,0 +1,27 @@
+{
+  "PaymentGateway": {
+    "PaymentMethods": [
+      {
+        "imageUrl": "image link1",
+        "title": "Bank",
+        "key": "bank_method",
+        "description": "Bank payment method",
+        "requireDetails": false
+      },
+      {
+        "imageUrl": "image link2",
+        "title": "IBox terminal",
+        "key": "ibox_method",
+        "description": "IBox payment method",
+        "requireDetails": false
+      },
+      {
+        "imageUrl": "image link3",
+        "title": "Visa",
+        "key": "visa_method",  
+        "description": "Visa payment method",
+        "requireDetails": true
+      }
+    ]
+  }
+}

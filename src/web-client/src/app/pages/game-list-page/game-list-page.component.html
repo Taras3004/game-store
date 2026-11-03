@@ -1,0 +1,24 @@
+<div
+    class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4 border-b border-gray-200 pb-4"
+>
+    <h1 class="text-3xl font-bold text-slate-800">Games</h1>
+
+    <div class="relative w-full md:w-80">
+        <input
+            type="text"
+            placeholder="Search..."
+            class="w-full pl-4 pr-10 py-2 border border-gray-300 bg-white text-sm focus:outline-none focus:border-orange-500 transition-colors"
+        />
+    </div>
+</div>
+
+<div class="flex flex-col lg:flex-row gap-12">
+    <div class="grow">
+        <game-list [games]="games" (gameSelected)="onGameSelect($event)"> </game-list>
+    </div>
+
+    <div class="w-full lg:w-[320px] shrink-0 self-start">
+        <game-filter [genres]="genres" [platforms]="platforms" [publishers]="publishers">
+        </game-filter>
+    </div>
+</div>

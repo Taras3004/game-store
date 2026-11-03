@@ -1,0 +1,44 @@
+<div [class]="comment.type === 'Reply' ? 'mt-6' : 'bg-gray-50 p-6'">
+    <div class="flex gap-4">
+        <div class="w-12 h-12 rounded-full bg-slate-300 shrink-0">
+            <!-- <img [src]="comment.avatarUrl"> -->
+        </div>
+
+        <div class="grow">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h4 class="font-bold text-slate-800">{{ comment.authorName }}</h4>
+                    <span class="text-xs text-slate-400">{{ comment.date }}</span>
+                </div>
+
+                @if (comment.type === "Default" && comment.rating) {
+                    <div class="text-orange-500 text-sm tracking-widest">★★★★★</div>
+                }
+            </div>
+
+            @if (comment.type === "Quote") {
+                <blockquote class="text-slate-800 text-sm mt-3">
+                    <p>"{{ comment.quoteText }}"</p>
+                </blockquote>
+            }
+
+            <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                {{ comment.text }}
+            </p>
+
+            <div class="flex gap-4 mt-3">
+                <button class="text-orange-500 text-xs font-bold hover:underline">Like</button>
+                <button class="text-orange-500 text-xs font-bold hover:underline">Reply</button>
+                <button class="text-orange-500 text-xs font-bold hover:underline">Quote</button>
+            </div>
+        </div>
+    </div>
+
+    @if (comment.replies && comment.replies.length > 0) {
+        <div class="ml-16">
+            @for (reply of comment.replies; track reply.id) {
+                <game-comment [comment]="reply"></game-comment>
+            }
+        </div>
+    }
+</div>

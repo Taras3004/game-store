@@ -1,0 +1,14 @@
+{
+  "semi": true,
+  "tabWidth": 4,
+  "singleQuote": false,
+  "printWidth": 100,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "angular"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<div class="p-6 bg-gray-50 flex flex-col h-full">
+        <h2 class="text-2xl font-bold text-slate-800 mb-6">Twitter Updates</h2>
+
+        <div class="flex flex-col">
+            @for (tweet of tweets; track tweet.id) {
+                <div class="py-4 border-b border-gray-200 last:border-0 flex flex-col gap-1 first:pt-0">
+                    <span class="text-slate-600 text-sm">{{ tweet.title }}</span>
+                    <a [href]="tweet.url" class="text-orange-500 text-sm hover:underline">{{ tweet.urlText }}</a>
+                    <span class="text-xs text-gray-400 mt-1">
+                        {{ tweet.time }} <a href="#" class="hover:underline ml-1 cursor-pointer">reply</a>
+                    </span>
+                </div>
+            }
+        </div>
+
+        <button class="mt-auto self-end bg-orange-500 hover:bg-orange-600 cursor-pointer text-white font-bold py-2 px-6 transition-colors">
+            Follow Us
+        </button>
+    </div>

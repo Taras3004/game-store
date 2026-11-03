@@ -1,0 +1,73 @@
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+    <div class="flex flex-col gap-4">
+        <div
+            class="aspect-4/3 bg-slate-800 relative flex items-center justify-between px-4 group cursor-pointer"
+        ></div>
+
+        <div class="grid grid-cols-3 gap-4">
+            <div class="aspect-video bg-slate-700 cursor-pointer"></div>
+            <div class="aspect-video bg-slate-700 cursor-pointer"></div>
+            <div class="aspect-video bg-slate-700 cursor-pointer"></div>
+        </div>
+    </div>
+
+    <div class="flex flex-col">
+        <h1 class="text-3xl font-bold text-slate-800 leading-tight mb-2">
+            {{ game.title }}
+        </h1>
+
+        <div class="flex justify-between gap-6 mb-8">
+            @if (game.discountedPrice) {
+                <div>
+                    <span class="text-2xl font-bold text-red-700 pr-2">{{
+                        game.discountedPrice | currency: "USD"
+                    }}</span>
+                    <span class="text-xl font-bold text-slate-500 line-through">{{
+                        game.price | currency: "USD"
+                    }}</span>
+                </div>
+            } @else {
+                <span class="text-2xl font-bold text-slate-800">{{
+                    game.price | currency: "USD"
+                }}</span>
+            }
+
+            <div class="flex items-center gap-2">
+                <span class="text-orange-500 tracking-widest text-sm">★★★★★</span>
+                <span class="text-xs font-bold text-slate-500 underline cursor-pointer"
+                    >{{ game.reviewsCount }} reviews</span
+                >
+            </div>
+        </div>
+
+        <!-- Характеристики -->
+        <div class="grid grid-cols-3 gap-4 text-sm mb-8">
+            <div class="flex flex-col gap-1">
+                <span class="text-slate-400 font-semibold">Platform</span>
+                <span class="text-slate-800">{{ game.platform }}</span>
+            </div>
+            <div class="flex flex-col gap-1">
+                <span class="text-slate-400 font-semibold">Size</span>
+                <span class="text-slate-800">{{ game.size }}</span>
+            </div>
+            <div class="flex flex-col gap-1">
+                <span class="text-slate-400 font-semibold">Genre</span>
+                <span class="text-orange-500 cursor-pointer hover:underline">{{
+                    game.genres.join(", ")
+                }}</span>
+            </div>
+        </div>
+
+        <button
+            (click)="onAddToCart()"
+            class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 transition-colors self-start mb-10"
+        >
+            Add to cart
+        </button>
+
+        <h3 class="text-lg font-bold text-slate-800 mb-4">Game Description</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+            {{ game.description }}
+        </p>
+    </div>
+</div>

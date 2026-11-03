@@ -1,0 +1,21 @@
+<game-details [game]="gameData" (addToCart)="handleAddToCart($event)"> </game-details>
+
+<hr class="text-gray-300 mb-4" />
+
+<div class="flex justify-between items-end mb-8 pb-4">
+    <div>
+        <h2 class="text-3xl font-bold text-slate-800">{{ totalComments }} Comments</h2>
+        <div class="flex items-center gap-2 mt-2">
+            <span class="text-orange-500 tracking-widest">★★★★☆</span>
+            <span class="text-sm font-bold text-slate-600">{{ averageRating }}</span>
+        </div>
+    </div>
+
+    <button
+        class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 transition-colors"
+    >
+        Write a comment
+    </button>
+</div>
+
+<game-comments-list [comments]="comments"></game-comments-list>
